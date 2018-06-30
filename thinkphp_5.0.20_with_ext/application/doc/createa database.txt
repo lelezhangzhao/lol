@@ -1,0 +1,123 @@
+create table tb_user(
+	username varchar(20),
+	password varchar(20),
+	tel varchar(11) primary key,
+	rankpre varchar(20),
+	registertime datetime,
+	lastlogintime datetime
+);
+
+
+create table tb_account(
+	tel varchar(11) primary key,
+	name varchar(20),
+	idcard varchar(18),
+	password varchar(20),
+	alipaynum varchar(20),
+	banknum varchar(20),
+	bankname varchar(40),
+	bankdeposit varchar(100),
+	money float
+);
+
+create table tb_transfer(
+	tel varchar(20) primary key,
+	type varchar(20),
+	money float,
+	theotherside varchar(20),
+	submittime datetime,
+	transfertime datetime,
+	confirmtime datetime
+);
+
+create table tb_invest(
+	tel varchar(20) primary key,
+	type varchar(50),
+	money float,
+	investtime datetime,
+	result varchar(20)
+);
+
+create table tb_profit(
+	rank int,
+	profit float
+);
+
+create table tb_match(
+	type varchar(30),
+	caption varchar(50),
+	time datetime
+);
+
+
+create table tb_matchinfo(
+	matchtype varchar(30),
+	matchinfotype varchar(50),
+	caption varchar(50),
+	rate float,
+	curinvest float,
+	cufofftime datetime
+);
+
+
+
+
+insert into tb_user
+(username, password, tel, rankpre, registertime, lastlogintime)
+values
+("lelezhangzhao", "lelezhangzhao", "13113310202", "lelezhangzhao", now(), now());
+
+insert into tb_account
+(tel, name, idcard, password, alipaynum, banknum, bankname, bankdeposit, money)
+values
+("13113310202", "张召", "131126199005160039", "lelezhangzhao", "13113310202", "6217233602000750808", "中国工商银行", "广州车陂支行", "10000");
+
+insert into tb_profit
+(rank, profit)
+values
+(1, 0.01);
+
+
+insert into tb_match
+(type, caption, time)
+values
+("201806011500_RNG_EDG_BO5", "RNG:EDG", "2018-6-1 15:00");
+
+insert into tb_matchinfo
+(matchtype, matchinfotype, catpion, rate, curinvest, cufofftime)
+values
+("201806011500_RNG_EDG_BO5", "201806011500_RNG_EDG_BO5_3_0", "RNG:EDG 3:0", 1.2, 0, "2018-06-01 15:00"),
+("201806011500_RNG_EDG_BO5", "201806011500_RNG_EDG_BO5_3_1", "RNG:EDG 3:1", 1.2, 0, "2018-06-01 15:00"),
+("201806011500_RNG_EDG_BO5", "201806011500_RNG_EDG_BO5_3_2", "RNG:EDG 3:2", 1.2, 0, "2018-06-01 15:00"),
+("201806011500_RNG_EDG_BO5", "201806011500_RNG_EDG_BO5_0_3", "RNG:EDG 0:3", 1.2, 0, "2018-06-01 15:00"),
+("201806011500_RNG_EDG_BO5", "201806011500_RNG_EDG_BO5_1_3", "RNG:EDG 1:3", 1.2, 0, "2018-06-01 15:00"),
+("201806011500_RNG_EDG_BO5", "201806011500_RNG_EDG_BO5_2_3", "RNG:EDG 2:3", 1.2, 0, "2018-06-01 15:00");
+
+
+
+insert into tb_match
+(type, caption, time)
+values
+("201806011500_RNG_EDG", "RNG:EDG", "2018-6-1 15:00");
+
+insert into tb_matchinfo
+(matchtype, matchinfotype, catpion, rate, curinvest, cufofftime)
+values
+("201806011500_RNG_EDG", "201806011500_RNG_EDG_SMALL_DROGON_RNG", "RNG拿第一条小龙", 1.5, 0, "2018-06-01 15:00"),
+("201806011500_RNG_EDG", "201806011500_RNG_EDG_SMALL_DROGON_EDG", "EDG拿第一条小龙", 1.2, 0, "2018-06-01 15:00"),
+("201806011500_RNG_EDG", "201806011500_RNG_EDG_LARGE_DROGON_RNG", "RNG拿第一条大龙", 1.5, 0, "2018-06-01 15:00"),
+("201806011500_RNG_EDG", "201806011500_RNG_EDG_LARGE_DROGON_EDG", "EDG拿第一条大龙", 1.2, 0, "2018-06-01 15:00"),
+("201806011500_RNG_EDG", "201806011500_RNG_EDG_FIRST_BLOOD_EDG", "EDG拿一血", 1.2, 0, "2018-06-01 15:00"),
+("201806011500_RNG_EDG", "201806011500_RNG_EDG_FIRST_BLOOD_RNG", "RNG拿一血", 1.2, 0, "2018-06-01 15:00"),
+("201806011500_RNG_EDG", "201806011500_RNG_EDG_FIRST_TOWER_EDG", "EDG拿一塔", 1.2, 0, "2018-06-01 15:00"),
+("201806011500_RNG_EDG", "201806011500_RNG_EDG_FIRST_TOWER_RNG", "RNG拿一塔", 1.2, 0, "2018-06-01 15:00"),
+("201806011500_RNG_EDG", "201806011500_RNG_EDG_WIN_RNG", "RNG赢得比赛", 1.2, 0, "2018-06-01 15:00"),
+("201806011500_RNG_EDG", "201806011500_RNG_EDG_WIN_EDG", "EDG赢得比赛", 1.2, 0, "2018-06-01 15:00");
+
+
+
+
+
+
+
+
