@@ -5,12 +5,12 @@
 
 <body>
 <form method="post" action="{:url('lol/login_in/loginin')}">
-    用户名 <input type="text" name="account" /><br />
-    密码 <input type="text" name="password" /><br />
-    手机号 <input type="text" name="tel" /><br />
-    验证码 <input type="text" name="identify" />
+    用户名 <input type="text" name="username" />*<br />
+    密码 <input type="text" name="password" />*<br />
+    手机号 <input type="text" name="tel" />*<br />
+    验证码 <input type="text" name="identify" />*
     <img src="{:captcha_src()}" onclick="this.src='/captcha?id='+Math.random()" style="cursor: pointer" /><br />
-    推荐人 <input type="text" name="rankpre" /><br />
+    推荐人 <input type="text" name="rank_pre" /><br />
     <input type="submit" value="注册" name="loginin" />
 
 </form>
