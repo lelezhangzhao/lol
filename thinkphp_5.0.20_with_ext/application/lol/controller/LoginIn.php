@@ -24,10 +24,10 @@ class LoginIn extends Controller
         {
             //username不为空，且长度大于等于5，且唯一
             $username = $request->param('username');
-            if(empty($username))
-                return '用户名不能为空';
-            else if(strlen($username) < 5)
-                return '用户名长度至少是5';
+//            if(empty($username))
+//                return '用户名不能为空';
+//            else if(strlen($username) < 5)
+//                return '用户名长度至少是5';
             if(!empty(UserModel::where('username', $username)->find()))
             {
                 return '当前用户名已存在';
@@ -35,19 +35,19 @@ class LoginIn extends Controller
 
             //password不为空，且长度大于等于5，不能和username相同
             $password = $request->param('password');
-            if(empty($password))
-                return '密码不能为空';
-            else if(strlen($password) < 5)
-                return '密码长度至少是5';
-            else if($username === $password)
+//            if(empty($password))
+//                return '密码不能为空';
+//            else if(strlen($password) < 5)
+//                return '密码长度至少是5';
+            if($username === $password)
                 return '账户和密码不能相同';
 
             //tel不为空，且长度是11
             $tel = $request->param('tel');
-            if(empty($tel))
-                return '手机号不能为空';
-            else if(strlen($tel) != 11)
-                return '请输入正确的手机号';
+//            if(empty($tel))
+//                return '手机号不能为空';
+//            else if(strlen($tel) != 11)
+//                return '请输入正确的手机号';
             if(!empty(UserModel::where('tel', $tel)->find()))
             {
                 return '当前手机号已存在';
@@ -68,9 +68,15 @@ class LoginIn extends Controller
             $user->password = $password;
             $user->tel = $tel;
             $user->rank_pre = $rank_pre;
-            $user->save();
+            $result = $this->validate($user, 'User');
+            if(true !== $result)
+                return $result;
+            else
+            {
+                $user->allowField(true)->save();
 
-            $this->success('注册成功', 'lol/login_up/index');
+                $this->success('注册成功', 'lol/login_up/index');
+            }
         }
 
 

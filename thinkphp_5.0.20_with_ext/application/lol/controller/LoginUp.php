@@ -4,6 +4,7 @@ use think\Controller;
 use think\Request;
 use think\Db;
 use app\lol\model\User as UserModel;
+use think\Session;
 
 class LoginUp extends Controller
 {
@@ -19,6 +20,9 @@ class LoginUp extends Controller
         {
             $this->error('验证码错误');
         }
+
+
+
 
         //用户名不为空，至少五个字符
         $username = $request->param('username');
@@ -41,6 +45,7 @@ class LoginUp extends Controller
         $user = UserModel::where(['username' => $username, 'password' => $password])->find();
         if(!empty($user))
         {
+            Session::set('username', $username);
             $this->success('登录成功', 'lol/index/index');
         }
     }

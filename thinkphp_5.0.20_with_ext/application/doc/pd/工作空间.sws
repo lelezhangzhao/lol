@@ -4,7 +4,9 @@
 
 <Workspace>
 	<Local Expanded="Yes">
-		<Model Expanded="Yes" ID="{864BC5B3-C677-44BF-8083-47F671C2B15B}" Name="Project_1" Selected="Yes" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="Project_1/Project_1.prj"/>
+		<Model Expanded="Yes" ID="{864BC5B3-C677-44BF-8083-47F671C2B15B}" Loaded="No" Name="Project_1" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="Project_1/Project_1.prj"/>
+		<Model Expanded="Yes" ID="{864BC5B3-C677-44BF-8083-47F671C2B15B}" Loaded="No" Name="Project_1" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="Project_1/Project_1.prj"/>
+		<Model Expanded="Yes" ID="{864BC5B3-C677-44BF-8083-47F671C2B15B}" Name="Project_1" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="file:///C|/Users/Admin/Desktop/php/Project_1.prj"/>
 	</Local>
 	<BrowserModule Name="仓库(&amp;R)"/>
 </Workspace>
