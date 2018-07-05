@@ -4,6 +4,8 @@ use think\Db;
 use app\lol\model\User as UserModel;
 use think\Session;
 use think\Controller;
+use app\lol\model\Match as MatchModel;
+use app\lol\model\MatchInfo as MatchInfoModel;
 
 class Index extends Controller
 {
@@ -13,19 +15,8 @@ class Index extends Controller
         {
             return $this->error('先登录', 'lol\login_up\index');
         }
+
+        $match = MatchModel::where('matchtime' < strtotime('tomorror'))->select();
         return $this->fetch();
-    }
-    public function addUser()
-    {
-        $user = new UserModel;
-
-        $user->username = 'username';
-        $user->password = 'password';
-        $user->tel = '13113310202';
-        $user->rank_pre = 1;
-        $user->save();
-
-        $this->success('注册成功');
-
     }
 }

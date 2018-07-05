@@ -5,5 +5,5 @@ use think\Model;
 
 class Match extends Model
 {
-
+    protected $autoWriteTimestamp = false;
 }

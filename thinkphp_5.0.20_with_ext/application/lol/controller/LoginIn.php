@@ -68,18 +68,18 @@ class LoginIn extends Controller
             $user->password = $password;
             $user->tel = $tel;
             $user->rank_pre = $rank_pre;
+            $user->create_time = '2018-07-05 17:00:00';
+//            return $user->create_tiem;
+            $user->update_time = '2018-07-05 17:00:00';
             $result = $this->validate($user, 'User');
             if(true !== $result)
                 return $result;
             else
             {
-                $user->allowField(true)->save();
+                $user->save();
 
                 $this->success('注册成功', 'lol/login_up/index');
             }
         }
-
-
-
     }
 }

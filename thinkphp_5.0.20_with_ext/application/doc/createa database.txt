@@ -174,12 +174,12 @@ drop table if exists lol_user;
 create table lol_user
 (
    id                   int not null auto_increment,
-   username             varchar(20) not null,
-   password             varchar(20) not null,
+   username             varchar(30) not null,
+   password             varchar(30) not null,
    tel                  varchar(11) not null,
-   rank_pre             varchar(20),
-   create_time          int,
-   update_time          int,
+   rank_pre             varchar(30),
+   create_time          datetime,
+   update_time          datetime,
    status               int not null,
    primary key (id)
 );
@@ -193,11 +193,11 @@ drop table if exists lol_accountinfo;
 create table lol_accountinfo
 (
    id                   int not null auto_increment,
-   name                 varchar(20) not null,
+   name                 varchar(30) not null,
    idcard               varchar(18) not null,
-   secondpassword       varchar(20) not null,
-   alipaynum            varchar(20) not null,
-   banknum              varchar(20) not null,
+   secondpassword       varchar(30) not null,
+   alipaynum            varchar(30) not null,
+   banknum              varchar(30) not null,
    bankname             varchar(50) not null,
    status               int,
    user_id				int not null,
@@ -229,8 +229,8 @@ create table lol_cash
    id                   int not null auto_increment,
    type                 int,
    ydc                  real,
-   create_time          int,
-   update_time          int,
+   create_time          datetime,
+   update_time          datetime,
    status               int,
    user_id				int not null,
    primary key (id)
@@ -247,9 +247,9 @@ create table lol_score
    id                   int not null auto_increment,
    type                 int,
    ydc                  real,
-   theotherusername     varchar(20),
-   create_time          int,
-   update_time          int,
+   theotherusername     varchar(30),
+   create_time          datetime,
+   update_time          datetime,
    status               int,
    user_id				int not null,
    primary key (id)
@@ -265,8 +265,8 @@ create table lol_invest
 (
    id                   int not null auto_increment,
    ydc                  real,
-   create_time          int,
-   update_time          int,
+   create_time          datetime,
+   update_time          datetime,
    status               int,
    result               int,
    user_id				int not null,
@@ -298,7 +298,7 @@ create table lol_match
 (
    id                   int not null auto_increment,
    caption              varchar(50),
-   matchtime            int,
+   matchtime            datetime,
    primary key (id)
 );
 
@@ -315,10 +315,13 @@ create table lol_matchinfo
    rate                 real,
    curinvest            real,
    remaininvest         real,
-   cutofftime           int,
+   cutofftime           datetime,
    match_id				int not null,
    primary key (id)
 
 );
 
 
+insert into lol_match(id, caption, matchtime)
+values
+(1, "RNG:EDG", "2018-07-05 16:00:00");

@@ -9,7 +9,7 @@
     密码 <input type="text" name="password" />*<br />
     手机号 <input type="text" name="tel" />*<br />
     验证码 <input type="text" name="identify" />*
-    <img src="{:captcha_src()}" onclick="this.src='/captcha?id='+Math.random()" style="cursor: pointer" /><br />
+    <img src="{:captcha_src()}" onclick="this.src='/index.php/captcha?id='+Math.random()" style="cursor: pointer" /><br />
     推荐人 <input type="text" name="rank_pre" /><br />
     <input type="submit" value="注册" name="loginin" />
 
