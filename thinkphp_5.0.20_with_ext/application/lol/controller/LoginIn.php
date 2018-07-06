@@ -30,7 +30,7 @@ class LoginIn extends Controller
 //                return '用户名长度至少是5';
             if(!empty(UserModel::where('username', $username)->find()))
             {
-                return '当前用户名已存在';
+                $this->error( '当前用户名已存在');
             }
 
             //password不为空，且长度大于等于5，不能和username相同
@@ -40,7 +40,7 @@ class LoginIn extends Controller
 //            else if(strlen($password) < 5)
 //                return '密码长度至少是5';
             if($username === $password)
-                return '账户和密码不能相同';
+                $this->error('账户和密码不能相同');
 
             //tel不为空，且长度是11
             $tel = $request->param('tel');
@@ -50,7 +50,7 @@ class LoginIn extends Controller
 //                return '请输入正确的手机号';
             if(!empty(UserModel::where('tel', $tel)->find()))
             {
-                return '当前手机号已存在';
+                $this->error('当前手机号已存在');
             }
 
             //rank_pre如果不为空，必需是已存在username
@@ -59,7 +59,7 @@ class LoginIn extends Controller
             {
                 if(!empty(UserModel::where('username', $username)->find()))
                 {
-                    return '推荐码有误';
+                    $this->error('推荐码有误');
                 }
             }
 

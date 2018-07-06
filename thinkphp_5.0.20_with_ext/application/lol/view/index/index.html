@@ -1,10 +1,15 @@
 <html>
 <head>
     <title>LOL</title>
-    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js?version=1"></script>
 
-    <script type="text/javascript" src="/__JS__/action.js"></script>
-    <link rel="stylesheet" href="/__CSS__/style.css" type="text/css" />
+    <script type="text/javascript" src="__JS__/action.js?version=1"></script>
+
+    <script type="text/javascript">
+
+
+    </script>
+    <link rel="stylesheet" href="__CSS__/style.css" type="text/css" />
 
 </head>
 <body >
@@ -14,7 +19,7 @@
 
 <div id="center_left" class="menuDiv">
     <ul>
-        <li id="saishiliebiao"><a href="#">赛事列表</a></li>
+        <li id="match"><a href="#">赛事列表</a></li>
         <li id="xiazhujilu"><a href="#">下注记录</a></li>
         <li id="chongzhitixian"><a href="#">充值提现</a>
             <ul>
@@ -45,8 +50,18 @@
 
 
 <div id="bottom">
+    <form method="post" >
+        <h2>赛事列表（{$count}）</h2>
+        {volist name="list" id="match" }
+        <div class="info">
+            比赛名称：{$match.caption}<br/>
+            比赛时间：{$match.matchtime}<br/>
+            var id = {$match.id};
+            <input type="submit" value="下注" formaction={:url('lol/index/matchinvest?id=2')} />
+        </div>
+        {/volist}
 
-
+    </form>
 </div>
 
 </body>
