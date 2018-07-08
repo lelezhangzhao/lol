@@ -1,9 +1,10 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html";i:1531026335;}*/ ?>
 <html>
 <head>
     <title>LOL</title>
     <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js?version=1"></script>
 
-    <script type="text/javascript" src="__JS__/action.js?version=1"></script>
+    <script type="text/javascript" src="/static/js/action.js?version=1"></script>
 
     <script type="text/javascript">
         function MatchInvest(id){
@@ -27,7 +28,7 @@
 
         }
     </script>
-    <link rel="stylesheet" href="__CSS__/style.css" type="text/css" />
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
 
 </head>
 <body >
@@ -69,16 +70,16 @@
 
 <div id="bottom">
     <form method="post" >
-        <h2>赛事列表（{$count}）</h2>
-        {volist name="list" id="match" }
+        <h2>赛事列表（<?php echo $count; ?>）</h2>
+        <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$match): $mod = ($i % 2 );++$i;?>
         <div class="info">
-            比赛名称：{$match.caption}<br/>
-            比赛时间：{$match.matchtime}<br/>
+            比赛名称：<?php echo $match['caption']; ?><br/>
+            比赛时间：<?php echo $match['matchtime']; ?><br/>
             <div id="_middle"></div>
-            <input type="submit" value="下注" onClick="MatchInvest({$match.id})" />
-            <!--<input type="submit" value="下注" formaction="{:url('index.php/lol/index/matchinvest?id=1')}" />-->
+            <input type="submit" value="下注" onClick="MatchInvest(<?php echo $match['id']; ?>)" />
+            <!--<input type="submit" value="下注" formaction="<?php echo url('index.php/lol/index/matchinvest?id=1'); ?>" />-->
         </div>
-        {/volist}
+        <?php endforeach; endif; else: echo "" ;endif; ?>
 
     </form>
 </div>

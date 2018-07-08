@@ -29,6 +29,17 @@ class Index extends Controller
     public function MatchInvest(Request $request)
     {
         $id = $request->param('id');
-        return '333'.$id;
+        $matchinfo = MatchInfoModel::all();
+
+        $this->assign('matchinfolist', $matchinfo);
+        $this->assign('matchinfocount', count($matchinfo));
+
+        return $this->fetch();
+
+    }
+
+    public function MatchInfoInvest(Request $request)
+    {
+        return $request->param('id');
     }
 }

@@ -6,4 +6,5 @@ use think\Model;
 class MatchInfo extends Model
 {
 
+    protected $autoWriteTimestamp = false;
 }
