@@ -303,7 +303,7 @@ create table lol_match
 );
 
 
-drop table if exists lol_matchinfo;
+drop table if exists lol_match_info;
 
 /*==============================================================*/
 /* Table: lol_matchinfo                                         */

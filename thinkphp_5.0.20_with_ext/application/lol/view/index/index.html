@@ -5,29 +5,34 @@
 
     <script type="text/javascript" src="__JS__/action.js?version=1"></script>
 
+    <link rel="stylesheet" href="__CSS__/style.css" type="text/css" />
+
     <script type="text/javascript">
         function MatchInvest(id){
-            var xmlhttp;
-            if (window.XMLHttpRequest){
-                //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
-                xmlhttp=new XMLHttpRequest();
-            }
-            else
-            {
-                // IE6, IE5 浏览器执行代码
-                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-            }
-            xmlhttp.onreadystatechange = function(){
-                if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
-                    document.getElementById("_middle").innerHTML = xmlhttp.responseText;
-                }
-            }
-            xmlhttp.open("GET", "index.php/lol/index/matchinvest?id="+id, true);
-            xmlhttp.send()
+
+            window.open("/index.php/lol/invest/matchinvest?id="+id);
+//            var xmlhttp;
+//            if (window.XMLHttpRequest){
+//                //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+//                xmlhttp=new XMLHttpRequest();
+//            }
+//            else
+//            {
+//                // IE6, IE5 浏览器执行代码
+//                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+//            }
+//            xmlhttp.onreadystatechange = function(){
+//                if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+//                    alert(xmlhttp.responseText);
+//                    document.getElementById("id").innerHTML = xmlhttp.responseText;
+//                }
+//
+//            }
+//            xmlhttp.open("GET", "/index.php/lol/index/matchinvest?id="+id, true);
+//            xmlhttp.send()
 
         }
     </script>
-    <link rel="stylesheet" href="__CSS__/style.css" type="text/css" />
 
 </head>
 <body >
@@ -74,8 +79,8 @@
         <div class="info">
             比赛名称：{$match.caption}<br/>
             比赛时间：{$match.matchtime}<br/>
-            <div id="_middle"></div>
             <input type="submit" value="下注" onClick="MatchInvest({$match.id})" />
+
             <!--<input type="submit" value="下注" formaction="{:url('index.php/lol/index/matchinvest?id=1')}" />-->
         </div>
         {/volist}

@@ -4,6 +4,7 @@
     <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js?version=1"></script>
 
     <script type="text/javascript" src="__JS__/action.js?version=1"></script>
+    <link rel="stylesheet" href="__CSS__/style.css" type="text/css" />
 
     <script type="text/javascript">
         function MatchInfoInvest(id){
@@ -27,7 +28,6 @@
 
         }
     </script>
-    <link rel="stylesheet" href="__CSS__/style.css" type="text/css" />
 
 </head>
 <body >
@@ -46,15 +46,15 @@
 
 <div id="bottom">
     <form method="post" >
-        <h2>赛事列表（{$matchinfocount}）</h2>
-        {volist name="matchinfolist" id="matchinfo" }
+        <h2>赛事列表（{$matchinfoinvestcount}）</h2>
+        {volist name="matchinfoinvestlist" id="matchinfo" }
         <div class="info">
-            比赛名称：{$matchinfo.caption}<br/>
-            赔率：{$matchinfo.rate}<br/>
-            当前可下注额度：{$matchinfo.remaininvest}<br/>
-            下注截止时间：{$matchinfo.cutofftime}<br/>
+            比赛名称：{$matchinfoinvestlist.caption}<br/>
+            赔率：{$matchinfoinvestlist.rate}<br/>
+            当前可下注额度：{$matchinfoinvestlist.remaininvest}<br/>
+            下注截止时间：{$matchinfoinvestlist.cutofftime}<br/>
             <p id="id"></p>
-            <input type="submit" value="下注" onClick="MatchInfoInvest({$matchinfo.id})" />
+            <input type="submit" value="下注" onClick="MatchInfoInvest({$matchinfoinvestlist.id})" />
         </div>
         {/volist}
 
