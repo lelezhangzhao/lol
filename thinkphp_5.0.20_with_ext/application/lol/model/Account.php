@@ -6,4 +6,5 @@ use think\Model;
 class Account extends Model
 {
 
+    protected $autoWriteTimestamp = false;
 }

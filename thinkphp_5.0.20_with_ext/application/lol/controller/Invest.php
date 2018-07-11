@@ -29,7 +29,7 @@ class Invest extends Controller
 
     public function MatchInfoInvest(Request $request)
     {
-        $id = $request->param('id');
+        $matchinfoid = $request->param('id');
 
         $ydc = $request->param('ydc');
 
@@ -48,7 +48,7 @@ class Invest extends Controller
         ///当前项目可下注
         //时间
         //剩余额度
-        $matchinfo = MatchInfoModel::where('id', $id)->find();
+        $matchinfo = MatchInfoModel::where('id', $matchinfoid)->find();
         if(empty($matchinfo)){
             return $this->error('比赛不存在');
         }else{
@@ -73,7 +73,7 @@ class Invest extends Controller
         //先减项目额度
         //再减用户额度
         //记录用户下注信息
-        $matchinfo = MatchInfoModel::where('id', $id)->find();
+        $matchinfo = MatchInfoModel::where('id', $matchinfoid)->find();
         if(empty($matchinfo)){
             return $this->error('比赛不存在');
         }else{
@@ -86,16 +86,17 @@ class Invest extends Controller
         $account->ydc -= $ydc;
         $account->allowField(true)->save();
 
-        $invest = new InvestModel;
-        $invest->id = $id;
+        $invest = new InvestModel();
         $invest->ydc = $ydc;
         $invest->create_time = date('Y-m-d H:i:s');
         $invest->update_time = date('Y-m-d H:i:s');
         $invest->status = 0;
+        $invest->user_id = Session::get('id');
+        $invest->matchinfo_id = $matchinfoid;
 
         $invest->allowField(true)->save();
 
-
+        return $this->success('下注成功');
 
 
 

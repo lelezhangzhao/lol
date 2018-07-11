@@ -1,9 +1,13 @@
 <?php
 namespace app\lol\controller;
+
 use think\Controller;
-use app\lol\model\User as UserModel;
 use think\Request;
 use think\Db;
+
+use app\lol\model\User as UserModel;
+use app\lol\model\Account as AccountModel;
+use app\lol\model\AccountInfo as AccountInfoModel;
 
 class LoginIn extends Controller
 {
@@ -76,7 +80,22 @@ class LoginIn extends Controller
                 return $result;
             else
             {
-                $user->save();
+                $user->allowField(true)->save();
+
+                //注册成功后，数据库中插入account和accountinfo信息
+                $account = new AccountModel();
+                $account->user_id = $user->id;
+                $account->ydc = 0;
+                $account->allowField(true)->save();
+
+
+                $accountinfo = new AccountInfoModel();
+                $accountinfo->user_id = $user->id;
+                $accountinfo->status = 1;
+                $accountinfo->allowField(true)->save();
+
+
+
 
                 $this->success('注册成功', 'lol/login_up/index');
             }

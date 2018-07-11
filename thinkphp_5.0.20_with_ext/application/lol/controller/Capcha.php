@@ -6,7 +6,7 @@ class Captcha extends Controller
 {
 
 // 验证码表单
-    public function index()
+    public function Index()
     {
         return $this->fetch();
     }

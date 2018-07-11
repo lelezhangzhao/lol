@@ -1,5 +1,6 @@
 lol_user:
 status[0 => '封号', 1 => '正常']
+role[0 => '管理员', 1 => '普通账户']
 
 lol_account_info:
 status[0 => '封号', 1 => '正常']

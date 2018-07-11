@@ -5,5 +5,5 @@ use think\Model;
 
 class Cash extends Model
 {
-
+    protected $autoWriteTimestamp = false;
 }

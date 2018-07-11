@@ -23,18 +23,16 @@
 
 <div id="bottom">
     <form method="post" >
-        <h2>个人信息</h2>
-        {volist name="accountinfolist" id="accountinfo" }
-        <div class="info">
-            姓名：<input type="text" name="name" value="{$accountinfo.name}"<br/>
-            身份证：<input type="text" name="idcard" value="{$accountinfo.idcard}"<br/>
-            二级密码：<input type="text" name="secondpassword" value="{$accountinfo.secondpassword}"<br/>
-            银行卡号：<input type="text" name="banknum" value="{$accountinfo.banknum}"<br/>
-            开户银行：<input type="text" name="bankname" value="{$accountinfo.bankname}"<br/>
-            支付宝账号：<input type="text" name="alipaynum" value="{$accountinfo.alipaynum}"<br/>
-            <input type="submit" value="确定" formaction="{:url('/index.php/lol/account_info/setaccountinfo')}" />
+        <h2>个人信息({$accountinfocount})</h2>
+        <div>
+            姓名：<input type="text" name="name" value="{$accountinfoname}"/><br/>
+            身份证：<input type="text" name="idcard" value="{$accountinfoidcard}"/><br/>
+            二级密码：<input type="text" name="secondpassword" value="{$accountinfosecondpassword}"/><br/>
+            银行卡号：<input type="text" name="banknum" value="{$accountinfobanknum}"/><br/>
+            开户银行：<input type="text" name="bankname" value="{$accountinfobankname}"/><br/>
+            支付宝账号：<input type="text" name="alipaynum" value="{$accountinfoalipaynum}"/><br/>
+            <input type="submit" value="确定" formaction="{:url('lol/account_info/setaccountinfo')}" />
         </div>
-        {/volist}
     </form>
 </div>
 

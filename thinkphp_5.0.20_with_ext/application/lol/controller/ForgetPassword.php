@@ -7,7 +7,7 @@ use think\Session;
 
 class ForgetPassword extends Controller
 {
-    public function index()
+    public function Index()
     {
         return $this->fetch();
     }

@@ -5,5 +5,6 @@ use think\Model;
 
 class Score extends Model
 {
+    protected $autoWriteTimestamp = false;
 
 }

@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>LOL</title>
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js?version=1"></script>
+
+    <script type="text/javascript" src="__JS__/action.js?version=1"></script>
+    <link rel="stylesheet" href="__CSS__/style.css" type="text/css" />
+
+</head>
+<body >
+<div id="top">
+
+</div>
+
+
+
+<div id="center_right">
+
+
+
+</div>
+
+
+<div id="bottom">
+    <form method="post" target="exec_target">
+        <h2>提现</h2>
+        <div>
+            提现金额：<input type="text" name="ydc"/>ycb<br/>
+            二级密码：<input type="text" name="secondpassword"/><br/>
+            <input type="submit" value="提现到支付宝" formaction="{:url('lol/withdraw/withdraw')}" />
+        </div>
+    </form>
+    <iframe hidden id="exec_target" name="exec_target"></iframe>
+</div>
+
+</body>
+</html>
