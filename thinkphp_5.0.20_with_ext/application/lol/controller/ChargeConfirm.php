@@ -16,7 +16,7 @@ use app\lol\model\AccountInfo as AccountInfoModel;
 
 
 
-class CashConfirm extends Controller{
+class ChargeConfirm extends Controller{
     public function Index(){
         $user = UserModel::where('id', Session::get('id'))->find();
         if(empty($user)){
@@ -74,8 +74,5 @@ class CashConfirm extends Controller{
 
     }
 
-    public function TestConfirm(){
-        return "ok";
-    }
 
 }
