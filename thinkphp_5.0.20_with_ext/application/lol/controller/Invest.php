@@ -80,8 +80,11 @@ class Invest extends Controller
             $matchinfo->curinvest += $ydc;
             $matchinfo->remaininvest -= $ydc;
         }
+        $matchinfo->allowField(true)->save();
+
 
         $account->ydc -= $ydc;
+        $account->allowField(true)->save();
 
         $invest = new InvestModel;
         $invest->id = $id;
@@ -89,7 +92,9 @@ class Invest extends Controller
         $invest->create_time = date('Y-m-d H:i:s');
         $invest->update_time = date('Y-m-d H:i:s');
         $invest->status = 0;
-        $invest->result = 0;
+
+        $invest->allowField(true)->save();
+
 
 
 

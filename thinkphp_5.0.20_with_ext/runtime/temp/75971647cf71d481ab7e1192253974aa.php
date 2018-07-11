@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html";i:1531026335;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html";i:1531205512;}*/ ?>
 <html>
 <head>
     <title>LOL</title>
@@ -6,29 +6,34 @@
 
     <script type="text/javascript" src="/static/js/action.js?version=1"></script>
 
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+
     <script type="text/javascript">
         function MatchInvest(id){
-            var xmlhttp;
-            if (window.XMLHttpRequest){
-                //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
-                xmlhttp=new XMLHttpRequest();
-            }
-            else
-            {
-                // IE6, IE5 浏览器执行代码
-                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-            }
-            xmlhttp.onreadystatechange = function(){
-                if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
-                    document.getElementById("_middle").innerHTML = xmlhttp.responseText;
-                }
-            }
-            xmlhttp.open("GET", "index.php/lol/index/matchinvest?id="+id, true);
-            xmlhttp.send()
+
+            window.open("/index.php/lol/invest/matchinvest?id="+id);
+//            var xmlhttp;
+//            if (window.XMLHttpRequest){
+//                //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+//                xmlhttp=new XMLHttpRequest();
+//            }
+//            else
+//            {
+//                // IE6, IE5 浏览器执行代码
+//                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+//            }
+//            xmlhttp.onreadystatechange = function(){
+//                if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+//                    alert(xmlhttp.responseText);
+//                    document.getElementById("id").innerHTML = xmlhttp.responseText;
+//                }
+//
+//            }
+//            xmlhttp.open("GET", "/index.php/lol/index/matchinvest?id="+id, true);
+//            xmlhttp.send()
 
         }
     </script>
-    <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
 
 </head>
 <body >
@@ -75,8 +80,8 @@
         <div class="info">
             比赛名称：<?php echo $match['caption']; ?><br/>
             比赛时间：<?php echo $match['matchtime']; ?><br/>
-            <div id="_middle"></div>
             <input type="submit" value="下注" onClick="MatchInvest(<?php echo $match['id']; ?>)" />
+
             <!--<input type="submit" value="下注" formaction="<?php echo url('index.php/lol/index/matchinvest?id=1'); ?>" />-->
         </div>
         <?php endforeach; endif; else: echo "" ;endif; ?>

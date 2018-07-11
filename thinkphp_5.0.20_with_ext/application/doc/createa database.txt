@@ -105,7 +105,6 @@ create table lol_invest
    create_time          int,
    update_time          int,
    status               int,
-   result               int,
    user_id				int not null,
    matchinfo_id			int not null,
    primary key (id),
@@ -268,7 +267,6 @@ create table lol_invest
    create_time          datetime,
    update_time          datetime,
    status               int,
-   result               int,
    user_id				int not null,
    matchinfo_id			int not null,
    primary key (id)

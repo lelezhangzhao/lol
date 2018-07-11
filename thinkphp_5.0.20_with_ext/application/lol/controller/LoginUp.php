@@ -46,6 +46,7 @@ class LoginUp extends Controller
         if(!empty($user))
         {
             Session::set('username', $username);
+            Session::set('id', $user->id);
             $this->success('登录成功', 'lol/index/index');
         }
     }

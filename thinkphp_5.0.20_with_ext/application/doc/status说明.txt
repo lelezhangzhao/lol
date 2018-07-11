@@ -1,7 +1,7 @@
 lol_user:
 status[0 => '封号', 1 => '正常']
 
-lol_accountinfo:
+lol_account_info:
 status[0 => '封号', 1 => '正常']
 
 lol_cash:

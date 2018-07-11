@@ -15,7 +15,7 @@ class Index extends Controller
     {
         if(!Session::has('username'))
         {
-            return $this->error('先登录', 'lol\login_up\index');
+            return $this->error('先登录', 'index.php\lol\login_up\index');
         }
 
         $match = MatchModel::all();
