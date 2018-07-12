@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>LOL</title>
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js?version=1"></script>
+
+    <script type="text/javascript" src="__JS__/action.js?version=1"></script>
+    <link rel="stylesheet" href="__CSS__/style.css" type="text/css" />
+
+    <script type="text/javascript">
+        function InvestRevoke(invest_id){
+            var xmlhttp;
+            if (window.XMLHttpRequest){
+                //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+                xmlhttp=new XMLHttpRequest();
+            }
+            else
+            {
+                // IE6, IE5 浏览器执行代码
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function(){
+                if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                    document.getElementById("bill"+invest_id).innerHTML = "0";
+                    document.getElementById("revoke"+invest_id).disabled = "disabled";
+                }
+            }
+            xmlhttp.open("POST", "/index.php/lol/invest_record/investrevoke?invest_id="+invest_id, true);
+            xmlhttp.send()
+
+        }
+    </script>
+
+</head>
+<body >
+<div id="top">
+
+</div>
+
+
+
+<div id="center_right">
+
+
+
+</div>
+
+
+<div id="bottom">
+    <form method="post" target="exec_target">
+        <h2>下注记录</h2>
+        {volist name="investlist" id="invest" }
+        <div class="info">
+            比赛名称：{$invest.caption}<br/>
+            比赛时间：{$invest.matchtime}<br/>
+            下注额度：{$invest.ydc}<br/>
+            下注时间：{$invest.invest_create_time}<br/>
+            赔率：{$invest.rate}<br/>
+            结算：<span id="bill{$invest.id}"> {$invest.bill}</span><br/>
+            <input type="submit" value="撤销" id="revoke{$invest.id}" onClick=InvestRevoke({$invest.id}) />
+        </div>
+        {/volist}
+    </form>
+    <iframe hidden id="exec_target" />
+</div>
+
+</body>
+</html>

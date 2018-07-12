@@ -1,10 +1,11 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:106:"E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\withdraw_confirm\index.html";i:1531362477;}*/ ?>
 <html>
 <head>
     <title>LOL</title>
     <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js?version=1"></script>
 
-    <script type="text/javascript" src="__JS__/action.js?version=1"></script>
-    <link rel="stylesheet" href="__CSS__/style.css" type="text/css" />
+    <script type="text/javascript" src="/static/js/action.js?version=1"></script>
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
 
     <script>
         function CashConfirm(type, cash_id, user_id, ydc) {
@@ -55,19 +56,19 @@ $result = Db::view('user', 'id')
 
 <div id="bottom">
     <form method="post" action="" target="exec_target">
-        <h2>提现({$cashlistcount})</h2>
-        {volist name="cashlist" id="cash"}
+        <h2>提现(<?php echo $cashlistcount; ?>)</h2>
+        <?php if(is_array($cashlist) || $cashlist instanceof \think\Collection || $cashlist instanceof \think\Paginator): $i = 0; $__LIST__ = $cashlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cash): $mod = ($i % 2 );++$i;?>
         <div>
-            ID：{$cash.user_id}<br/>
-            姓名：{$cash.name}<br/>
-            银行卡号：{$cash.banknum}<br/>
-            支付宝账号：{$cash.alipaynum}<br/>
-            提现额度：{$cash.ydc}<br/>
-            提现时间：{$cash.create_time}<br/>
-            <input type="submit" value="确定" id="{$cash.cash_id}ok" onClick=CashConfirm("confirmsuccess",{$cash.cash_id},{$cash.user_id},{$cash.ydc})  />
-            <input type="submit" value="取消" id="{$cash.cash_id}cancel" onClick=CashConfirm("confirmfailed",{$cash.cash_id},{$cash.user_id},{$cash.ydc}) />
+            ID：<?php echo $cash['user_id']; ?><br/>
+            姓名：<?php echo $cash['name']; ?><br/>
+            银行卡号：<?php echo $cash['banknum']; ?><br/>
+            支付宝账号：<?php echo $cash['alipaynum']; ?><br/>
+            提现额度：<?php echo $cash['ydc']; ?><br/>
+            提现时间：<?php echo $cash['create_time']; ?><br/>
+            <input type="submit" value="确定" id="<?php echo $cash['cash_id']; ?>ok" onClick=CashConfirm("confirmsuccess",<?php echo $cash['cash_id']; ?>,<?php echo $cash['user_id']; ?>,<?php echo $cash['ydc']; ?>)  />
+            <input type="submit" value="取消" id="<?php echo $cash['cash_id']; ?>cancel" onClick=CashConfirm("confirmfailed",<?php echo $cash['cash_id']; ?>,<?php echo $cash['user_id']; ?>,<?php echo $cash['ydc']; ?>) />
         </div>
-        {/volist}
+        <?php endforeach; endif; else: echo "" ;endif; ?>
     </form>
     <iframe hidden id="exec_target" name="exec_target"></iframe>
 </div>

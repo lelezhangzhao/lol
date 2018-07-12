@@ -1,40 +1,45 @@
 <?php
 namespace app\lol\controller;
 
+
 use think\Controller;
 use think\Request;
+use think\Session;
+
+
 
 use app\lol\model\Account as AccountModel;
 use app\lol\model\Cash as CashModel;
 use app\lol\model\AccountInfo as AccountInfoModel;
 
-class Withdraw extends Controler
+class Withdraw extends Controller
 {
     public function Index(){
         return $this->fetch();
     }
 
     public function Withdraw(Request $request){
+
         $ydc = $request->param('ydc');
         $secondpassword = $request->param('secondpassword');
 
         $user_id = Session::get('id');
 
-        $accountinfo = AccountInfoModel::where('user_id', $user_id);
+        $accountinfo = AccountInfoModel::where('user_id', $user_id)->find();
         if(empty($accountinfo)){
-            return $this->error('accountinfo not exist');
+            $this->error('accountinfo not exist');
         }else{
-            if($accountinfo->secondpassword != $secondpassword){
-                return $this->error('二级密码错误');
+            if($accountinfo->secondpassword !== $secondpassword){
+                $this->error('二级密码错误');
             }
         }
 
-        $account = AccountModel::where('user_id', $user_id);
+        $account = AccountModel::where('user_id', $user_id)->find();
         if(empty($account)){
-            return $this->error('account not exist');
+            $this->error('account not exist');
         }else{
             if($account->ydc < $ydc){
-                return $this->error('剩余额度不够');
+                $this->error('剩余额度不够');
             }else{
                 $account->ydc -= $ydc;
                 $account->allowField(true)->save();
@@ -50,8 +55,7 @@ class Withdraw extends Controler
         $cash->user_id = $user_id;
 
         $cash->allowField(true)->save();
+        $this->success('提现成功，等待后台处理');
 
     }
-
-
 }

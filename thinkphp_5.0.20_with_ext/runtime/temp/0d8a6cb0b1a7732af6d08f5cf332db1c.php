@@ -1,10 +1,10 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html";i:1531276460;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html";i:1531381698;}*/ ?>
 <html>
 <head>
     <title>LOL</title>
     <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js?version=1"></script>
 
-    <script type="text/javascript" src="/static/js/action.js?version=2"></script>
+    <script type="text/javascript" src="/static/js/action.js?version=3"></script>
 
     <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
 
@@ -44,11 +44,11 @@
 <div id="center_left" class="menuDiv">
     <ul>
         <li id="match"><a href="#">赛事列表</a></li>
-        <li id="xiazhujilu"><a href="#">下注记录</a></li>
+        <li id="investrecord"><a href="#">下注记录</a></li>
         <li id="chongzhitixian"><a href="#">充值提现</a>
             <ul>
                 <li id="charge"><a href="#">充值</a></li>
-                <li id="tixian"><a href="#">提现</a></li>
+                <li id="withdraw"><a href="#">提现</a></li>
                 <li id="zhuanzhang"><a href="#">转账</a></li>
                 <li id="zhuanzhangjilu"><a href="#">转账记录</a></li>
             </ul>
