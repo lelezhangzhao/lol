@@ -20,6 +20,7 @@
             }
             xmlhttp.onreadystatechange = function(){
                 if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+//                    document.getElementById("bill"+invest_id).innerHTML = xmlhttp.responseText;
                     document.getElementById("bill"+invest_id).innerHTML = "0";
                     document.getElementById("revoke"+invest_id).disabled = "disabled";
                 }

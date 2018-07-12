@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:103:"E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\invest_record\index.html";i:1531382704;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:103:"E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\invest_record\index.html";i:1531386077;}*/ ?>
 <html>
 <head>
     <title>LOL</title>
@@ -21,6 +21,7 @@
             }
             xmlhttp.onreadystatechange = function(){
                 if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+//                    document.getElementById("bill"+invest_id).innerHTML = xmlhttp.responseText;
                     document.getElementById("bill"+invest_id).innerHTML = "0";
                     document.getElementById("revoke"+invest_id).disabled = "disabled";
                 }
@@ -47,7 +48,7 @@
 
 
 <div id="bottom">
-    <form method="post">
+    <form method="post" target="exec_target">
         <h2>下注记录</h2>
         <?php if(is_array($investlist) || $investlist instanceof \think\Collection || $investlist instanceof \think\Paginator): $i = 0; $__LIST__ = $investlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$invest): $mod = ($i % 2 );++$i;?>
         <div class="info">
@@ -61,7 +62,7 @@
         </div>
         <?php endforeach; endif; else: echo "" ;endif; ?>
     </form>
-
+    <iframe hidden id="exec_target" />
 </div>
 
 </body>
