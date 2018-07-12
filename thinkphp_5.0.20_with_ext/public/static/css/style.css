@@ -2,11 +2,9 @@ body {
         padding-top:100px;
         text-align:center; 
     }
-    
-    
     /* -------------菜单css代码----------begin---------- */
     .menuDiv { 
-        border: 2px solid #aac; 
+        border: 2px solid #aac;
         overflow: hidden; 
         display:inline-block;
     }

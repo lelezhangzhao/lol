@@ -1,14 +1,21 @@
 
+function MatchInfoInvest(url) {
+    window.open(url);
+}
+
+
 $(function(){
 
-    $("li#saishiliebiao").click(function(){
+
+
+    $("li#match").click(function(){
         
     });
     $("li#xiazhujilu").click(function(){
         alert("xiazhujilu");
     });
-    $("li#chongzhi").click(function(){
-        alert("chongzhi");
+    $("li#charge").click(function(){
+        MatchInfoInvest("/index.php/lol/charge/index");
     });
     $("li#tixian").click(function(){
         alert("tixian");
@@ -19,8 +26,8 @@ $(function(){
     $("li#zhuanzhangjilu").click(function(){
         alert("zhuanzhangjilu");
     });
-    $("li#xianshigerenxinxi").click(function(){
-        alert("xianshigerenxinxi");
+    $("li#displaypersoninfo").click(function(){
+        MatchInfoInvest("/index.php/lol/account_info/index");
     });
     $("li#xiugaimima").click(function(){
         alert("xiugaimima");
@@ -33,6 +40,9 @@ $(function(){
         alert("xitonggonggao");
     });
 
-
+    // $("input").click(function(){
+    //     alert($(this).attr("name"));
+    // });
 
 });
+
