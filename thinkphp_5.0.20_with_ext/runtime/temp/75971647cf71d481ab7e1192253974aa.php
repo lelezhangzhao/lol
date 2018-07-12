@@ -1,17 +1,17 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html";i:1531205512;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html";i:1531402257;}*/ ?>
 <html>
 <head>
     <title>LOL</title>
     <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js?version=1"></script>
 
-    <script type="text/javascript" src="/static/js/action.js?version=1"></script>
+    <script type="text/javascript" src="/static/js/action.js?version=3"></script>
 
     <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
 
     <script type="text/javascript">
-        function MatchInvest(id){
+        function MatchInvest(match_id){
 
-            window.open("/index.php/lol/invest/matchinvest?id="+id);
+            window.open("/index.php/lol/invest/matchinvest?match_id="+match_id);
 //            var xmlhttp;
 //            if (window.XMLHttpRequest){
 //                //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
@@ -44,18 +44,18 @@
 <div id="center_left" class="menuDiv">
     <ul>
         <li id="match"><a href="#">赛事列表</a></li>
-        <li id="xiazhujilu"><a href="#">下注记录</a></li>
+        <li id="investrecord"><a href="#">下注记录</a></li>
         <li id="chongzhitixian"><a href="#">充值提现</a>
             <ul>
-                <li id="chongzhi"><a href="#">充值</a></li>
-                <li id="tixian"><a href="#">提现</a></li>
+                <li id="charge"><a href="#">充值</a></li>
+                <li id="withdraw"><a href="#">提现</a></li>
                 <li id="zhuanzhang"><a href="#">转账</a></li>
                 <li id="zhuanzhangjilu"><a href="#">转账记录</a></li>
             </ul>
         </li>
-        <li id="gerenxinxi"><a href="#">个人信息</a>
+        <li id="personinfo"><a href="#">个人信息</a>
             <ul>
-                <li id="xianshigerenxinxi"><a href="#">显示个人信息</a></li>
+                <li id="displaypersoninfo"><a href="#">显示个人信息</a></li>
                 <li id="xiugaimima"><a href="#">修改密码</a></li>
                 <li id="xiugaierjimima"><a href="#">修改二级密码</a></li>
             </ul>

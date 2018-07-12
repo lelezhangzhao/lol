@@ -42,48 +42,59 @@ class InvestRecord extends Controller{
 
         $invest_id = $request->param('invest_id');
 
+//        $invest = InvestModel::where('id', $invest_id)->find();
         $invest = InvestModel::where('id', $invest_id)->find();
+        if(empty($invest)){
+            return '没有此下注信息';
+        }
         $matchinfo = MatchInfoModel::where('id', $invest->matchinfo_id)->find();
-        $match = MatchModel::where('id', $matchinfo->match_id)->find();
 
-        $dt = new \DateTime($invest->create_time);
-//        $dt->getTimestamp();
-//        $timediff = time() - $dt->getTimestamp();
-//        return $timediff;
-//        $remain = $timediff % 3600;
-//        $mins = intval($remain / 60);
-//        if($mins > 5){
-//            return '下注超过五分钟';
-//        }
-//        else{
-//            if(time() - unix_timestamp($match->match_time) < 5 * 60){
-//                return '距离开赛不到五分钟';
-//            }else{
-//                if($invest->status <> 0){
-//                    return '当前比赛不允许撤销';
-//                }else{
-//                    //可以撤销
-//                    //invest
-//                    //account
-//                    //matchinfo
-//                    $invest->update_time = date('Y-m-d H:i:s');
-//                    $invest->status = 1;
-//                    $invest->result = '撤销';
-//                    $invest->bill = 0;
-//                    $invest->allowField(true)->save();
-//
-//                    $account = AccountModel::where('user_id', Session::get('id'))->find();
-//                    $account->ydc += $invest->ydc;
-//                    $account->allowField(true)->save();
-//
-//
-//                    $matchinfo->curinvest -= $invest->ydc;
-//                    $matchinfo->remaininvest += $invest->ydc;
-//                    $matchinfo->allowField(true)->save();
-//
-//                    return '撤销成功';
-//                }
-//            }
-//        }
+        $sql_investcreatetime = 'select * from lol_invest where id ='.$invest_id;
+        $row_investcreatetime = Db::query($sql_investcreatetime);
+        if(empty($row_investcreatetime)){
+            return 'error';
+        }
+        $phptime_investcreatetime = strtotime($row_investcreatetime[0]['create_time']);
+
+        $sql_matchtime = 'select * from lol_match where id = '.$matchinfo->match_id;
+        $row_matchtime = Db::query($sql_matchtime);
+        $phptime_matchtime = strtotime($row_matchtime[0]['matchtime']);
+
+
+        $difmins_createtime = (time() - $phptime_investcreatetime) / 60;
+        if($difmins_createtime > 5){
+            return '下注超过五分钟';
+        }
+        else{
+            $difmins_matchtime = ($phptime_matchtime - time()) / 60;
+            if($difmins_matchtime < 5){
+                return '距离开赛不到五分钟';
+            }else{
+                if($invest->status <> 0){
+                    return '当前比赛不允许撤销';
+                }else{
+                    //可以撤销
+                    //invest
+                    //account
+                    //matchinfo
+                    $invest->update_time = date('Y-m-d H:i:s');
+                    $invest->status = 1;
+                    $invest->result = '撤销';
+                    $invest->bill = 0;
+                    $invest->allowField(true)->save();
+
+                    $account = AccountModel::where('user_id', Session::get('id'))->find();
+                    $account->ydc += $invest->ydc;
+                    $account->allowField(true)->save();
+
+
+                    $matchinfo->curinvest -= $invest->ydc;
+                    $matchinfo->remaininvest += $invest->ydc;
+                    $matchinfo->allowField(true)->save();
+
+                    return '撤销成功';
+                }
+            }
+        }
     }
 }

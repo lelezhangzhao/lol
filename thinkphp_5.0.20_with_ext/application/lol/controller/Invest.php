@@ -4,6 +4,8 @@ namespace app\lol\controller;
 use think\Controller;
 use think\Request;
 use think\Session;
+
+
 use app\lol\model\MatchInfo as MatchInfoModel;
 use app\lol\model\User as UserModel;
 use app\lol\model\Account as AccountModel;
@@ -15,10 +17,11 @@ class Invest extends Controller
 
     public function MatchInvest(Request $request)
     {
-        $id = $request->param('id');
+        $match_id = $request->param('match_id');
 
 
-        $matchinfo = MatchInfoModel::all();
+        $matchinfo = MatchInfoModel::where('match_id', $match_id)->select();
+
 
         $this->assign('matchinfolist', $matchinfo);
         $this->assign('matchinfocount', count($matchinfo));
