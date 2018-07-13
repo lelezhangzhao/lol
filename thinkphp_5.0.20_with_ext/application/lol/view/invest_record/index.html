@@ -7,32 +7,31 @@
     <link rel="stylesheet" href="__CSS__/style.css" type="text/css" />
 
     <script type="text/javascript">
-        function InvestRevoke(invest_id){
-            var xmlhttp;
-            if (window.XMLHttpRequest){
-                //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
-                xmlhttp=new XMLHttpRequest();
-            }
-            else
-            {
-                // IE6, IE5 浏览器执行代码
-                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-            }
-            xmlhttp.onreadystatechange = function(){
-                if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
-                    document.getElementById("bill"+invest_id).innerHTML = xmlhttp.responseText;
-//                    document.getElementById("bill"+invest_id).innerHTML = "0";
-                    document.getElementById("revoke"+invest_id).disabled = "disabled";
-                }
-            }
-            xmlhttp.open("POST", "/index.php/lol/invest_record/investrevoke?invest_id="+invest_id, true);
-            xmlhttp.send()
 
-        }
+//        function ShowRevokeButton(btnId, investStatus, investCreateTime, matchTime){
+//            if(investStatus != 0){
+//                document.getElementById(btnId).style.display = 'none';
+//            }
+//
+//            var cur_time = new Date() / 1000;
+//            var invest_createtime = Date.parse(investCreateTime) / 1000;
+//            var match_time = Date.parse(matchTime) / 1000;
+//
+//            var investcreatetime_to_now_minus = (cur_time - invest_createtime) / 60;
+//            var now_to_matchtime_minus = (match_time - cur_time) / 60;
+//            if(investcreatetime_to_now_minus >= 5){
+//                document.getElementById(btnId).style.display = 'none';
+//            }
+//            if(now_to_matchtime_minus <= 5){
+//                document.getElementById(btnId).style.display = 'none';
+//            }
+//        }
+
+
     </script>
 
 </head>
-<body >
+<body onload="GetInvestRecord()">
 <div id="top">
 
 </div>
@@ -49,17 +48,8 @@
 <div id="bottom">
     <form method="post" target="exec_target">
         <h2>下注记录</h2>
-        {volist name="investlist" id="invest" }
-        <div class="info">
-            比赛名称：{$invest.caption}<br/>
-            比赛时间：{$invest.matchtime}<br/>
-            下注额度：{$invest.ydc}<br/>
-            下注时间：{$invest.invest_create_time}<br/>
-            赔率：{$invest.rate}<br/>
-            结算：<span id="bill{$invest.id}"> {$invest.bill}</span><br/>
-            <input type="submit" value="撤销" id="revoke{$invest.id}" onClick=InvestRevoke({$invest.id}) />
+        <div id="investrecord">
         </div>
-        {/volist}
     </form>
     <iframe hidden id="exec_target" name="exec_target"/>
 </div>

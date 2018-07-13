@@ -43,8 +43,9 @@ class LoginUp extends Controller
 
         //查询数据库，用户名和密码全部匹配
         $user = UserModel::where(['username' => $username, 'password' => $password])->find();
-        if(!empty($user))
-        {
+        if(empty($user)){
+            $this->error('用户名或密码错误');
+        }else{
             Session::set('username', $username);
             Session::set('id', $user->id);
             $this->success('登录成功', 'lol/index/index');

@@ -322,6 +322,10 @@ create table lol_matchinfo
 );
 
 
-insert into lol_match(id, caption, matchtime)
+insert into lol_match(caption, matchtime, status)
 values
-(1, "RNG:EDG", "2018-07-05 16:00:00");
+("RNG:EDG", "2018-07-13 17:00:00", 0);
+
+insert into lol_match_info(caption, rate, curinvest, remaininvest, cutofftime, match_id)
+values
+("RW:RNG 3:0", 5, 0, 1000, "2018-07-13 16:55:00", 4);

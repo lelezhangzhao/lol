@@ -1,42 +1,19 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html";i:1531381698;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html";i:1531469777;}*/ ?>
 <html>
 <head>
     <title>LOL</title>
     <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js?version=1"></script>
 
-    <script type="text/javascript" src="/static/js/action.js?version=3"></script>
+    <script type="text/javascript" src="/static/js/action.js?version=5"></script>
 
     <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
 
     <script type="text/javascript">
-        function MatchInvest(id){
 
-            window.open("/index.php/lol/invest/matchinvest?id="+id);
-//            var xmlhttp;
-//            if (window.XMLHttpRequest){
-//                //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
-//                xmlhttp=new XMLHttpRequest();
-//            }
-//            else
-//            {
-//                // IE6, IE5 浏览器执行代码
-//                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-//            }
-//            xmlhttp.onreadystatechange = function(){
-//                if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
-//                    alert(xmlhttp.responseText);
-//                    document.getElementById("id").innerHTML = xmlhttp.responseText;
-//                }
-//
-//            }
-//            xmlhttp.open("GET", "/index.php/lol/index/matchinvest?id="+id, true);
-//            xmlhttp.send()
-
-        }
     </script>
-
+    <code class="hljs xml"><span class="hljs-tag"><span class="hljs-tag"><</span><span class="hljs-name"><span class="hljs-tag"><span class="hljs-name">script</span></span></span><span class="hljs-tag"> </span><span class="hljs-attr"><span class="hljs-tag"><span class="hljs-attr">src</span></span></span><span class="hljs-tag">=</span><span class="hljs-string"><span class="hljs-tag"><span class="hljs-string">"1.js?ver=1"</span></span></span><span class="hljs-tag">></span></span><span class="undefined"></span><span class="hljs-tag"><span class="undefined"></span><span class="hljs-tag"></</span><span class="hljs-name"><span class="hljs-tag"><span class="hljs-name">script</span></span></span><span class="hljs-tag">></span></span></code>
 </head>
-<body >
+<body onload="GetMatch()">
 <div id="top">
 
 </div>
@@ -75,16 +52,10 @@
 
 <div id="bottom">
     <form method="post" >
-        <h2>赛事列表（<?php echo $count; ?>）</h2>
-        <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$match): $mod = ($i % 2 );++$i;?>
-        <div class="info">
-            比赛名称：<?php echo $match['caption']; ?><br/>
-            比赛时间：<?php echo $match['matchtime']; ?><br/>
-            <input type="submit" value="下注" onClick="MatchInvest(<?php echo $match['id']; ?>)" />
+        <h2>赛事列表</h2>
+        <div id="index_match">
 
-            <!--<input type="submit" value="下注" formaction="<?php echo url('index.php/lol/index/matchinvest?id=1'); ?>" />-->
         </div>
-        <?php endforeach; endif; else: echo "" ;endif; ?>
 
     </form>
 </div>

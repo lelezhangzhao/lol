@@ -97,4 +97,44 @@ class InvestRecord extends Controller{
             }
         }
     }
+
+    public function GetInvestRecord(){
+
+        $result = Db::view('invest', ['id', 'ydc', 'create_time' => 'invest_create_time', 'status', 'result', 'bill'])
+            ->view('match_info', ['caption', 'rate'], 'invest.matchinfo_id = match_info.id')
+            ->view('match', 'matchtime', 'match_info.match_id = match.id')
+            ->where(['invest.user_id' => Session::get('id')])
+            ->order('invest.create_time', 'desc')
+            ->select();
+
+
+        foreach($result as $record){
+//            dump($record);
+            echo '比赛名称：'.$record['caption'].'<br/>';
+            echo '比赛时间：'.$record['matchtime'].'<br/>';
+            echo '下注额度：'.$record['ydc'].'<br/>';
+            echo '下注时间：'.$record['invest_create_time'].'<br/>';
+            echo '赔率：'.$record['rate'].'<br/>';
+            echo '操作：<span id="result'.$record['id'].'">'.$record['result'].'</span><br/>';
+            echo '结算：<span id="bill'.$record['id'].'">'.$record['bill'].'</span><br/>';
+
+            $phptime_investcreatetime = strtotime($record['invest_create_time']);
+            $phptime_matchtime = strtotime($record['matchtime']);
+
+
+            $difmins_createtime = (time() - $phptime_investcreatetime) / 60;
+            $difmins_matchtime = ($phptime_matchtime - time()) / 60;
+
+            if($record['status'] == 0 && $difmins_createtime <= 5 && $difmins_matchtime >= 5){
+                echo '<input type="submit" value="撤销" id="revoke'.$record['id'].'"  onclick="InvestRevoke('.$record['id'].')" /><br />';
+            }
+            echo '<br />';
+
+        }
+
+
+
+
+    }
+
 }
