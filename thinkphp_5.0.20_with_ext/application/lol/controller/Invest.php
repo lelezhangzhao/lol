@@ -7,6 +7,7 @@ use think\Session;
 
 
 use app\lol\model\MatchInfo as MatchInfoModel;
+use app\lol\model\Match as MatchModel;
 use app\lol\model\User as UserModel;
 use app\lol\model\Account as AccountModel;
 use app\lol\model\Invest as InvestModel;
@@ -59,6 +60,11 @@ class Invest extends Controller
                 return $this->error('剩余额度不够');
             }else if($matchinfo->cutofftime < date('Y-m-d H:i:s')){
                 return $this->error('下注已停止');
+            }else{
+                $match = MatchModel::where('id', $matchinfo->match_id)->find();
+                if($match->status <> 0){
+                    return '下注已停止';
+                }
             }
         }
 
