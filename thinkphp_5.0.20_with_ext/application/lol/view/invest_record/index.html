@@ -1,36 +1,4 @@
-<html>
-<head>
-    <title>LOL</title>
-    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js?version=1"></script>
-
-    <script type="text/javascript" src="__JS__/action.js?version=1"></script>
-    <link rel="stylesheet" href="__CSS__/style.css" type="text/css" />
-
-    <script type="text/javascript">
-
-//        function ShowRevokeButton(btnId, investStatus, investCreateTime, matchTime){
-//            if(investStatus != 0){
-//                document.getElementById(btnId).style.display = 'none';
-//            }
-//
-//            var cur_time = new Date() / 1000;
-//            var invest_createtime = Date.parse(investCreateTime) / 1000;
-//            var match_time = Date.parse(matchTime) / 1000;
-//
-//            var investcreatetime_to_now_minus = (cur_time - invest_createtime) / 60;
-//            var now_to_matchtime_minus = (match_time - cur_time) / 60;
-//            if(investcreatetime_to_now_minus >= 5){
-//                document.getElementById(btnId).style.display = 'none';
-//            }
-//            if(now_to_matchtime_minus <= 5){
-//                document.getElementById(btnId).style.display = 'none';
-//            }
-//        }
-
-
-    </script>
-
-</head>
+{include file="layout" /}
 <body onload="GetInvestRecord()">
 <div id="top">
 
@@ -55,4 +23,3 @@
 </div>
 
 </body>
-</html>

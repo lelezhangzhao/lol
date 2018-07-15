@@ -8,12 +8,12 @@ if (window.XMLHttpRequest){
     xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 }
 
-//Invest
+//invest
 function MatchInvest(match_id){
     window.open("/index.php/lol/invest/matchinvest?match_id="+match_id);
 }
 
-//Index
+//index
 function OpenNewUrl(url) {
     window.open(url);
 }
@@ -60,11 +60,11 @@ function GetMatch(){
             document.getElementById("index_match").innerHTML = xmlhttp.responseText;
         }
     }
-    xmlhttp.open("GET", "/index.php/lol/index/getmatch", true);
+    xmlhttp.open("POST", "/index.php/lol/index/getmatch", true);
     xmlhttp.send()
 }
 
-//InvestRecord
+//invest_record
 function InvestRevoke(invest_id){
     xmlhttp.onreadystatechange = function(){
         if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
@@ -88,6 +88,79 @@ function GetInvestRecord(){
     xmlhttp.send()
 
 }
+
+//charge_confirm
+function CashConfirm(type, cash_id, user_id, ydc) {
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            document.getElementById(cash_id + "ok").disabled = "disabled";
+            document.getElementById(cash_id + "cancel").disabled = "disabled";
+        }
+
+    }
+    xmlhttp.open("POST", "/index.php/lol/charge_confirm/" + type + "?cash_id=" + cash_id + "&user_id=" + user_id + "&ydc=" + ydc, true);
+    xmlhttp.send()
+}
+
+//match_invest
+function MatchInfoInvest(matchinfo_id, ydc){
+    window.open("/index.php/lol/invest/matchinfoinvest?matchinfo_id="+matchinfo_id+"&ydc="+ydc);
+}
+
+//withdraw_confirm
+function CashConfirm(confirmtype, cash_id, user_id, ydc) {
+
+    xmlhttp.onreadystatechange = function(){
+        if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+            document.getElementById(cash_id+"ok").disabled = "disabled";
+            document.getElementById(cash_id+"cancel").disabled = "disabled";
+        }
+
+    }
+    xmlhttp.open("POST", "/index.php/lol/withdraw_confirm/"+confirmtype+"?cash_id="+cash_id+"&user_id="+user_id+"&ydc="+ydc, true);
+    xmlhttp.send()
+}
+
+//match_confirm
+
+function MatchConfirm(match_id){
+    var textStatusId = "status" + match_id;
+    var textStatus = document.getElementById(textStatusId).value;
+    xmlhttp.onreadystatechange = function(){
+        if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+            document.getElementById("status"+match_id).disabled = "disabled";
+            document.getElementById("confirm"+match_id).disabled = "disabled";
+        }
+    }
+    xmlhttp.open("POST", "/index.php/lol/match_confirm/matchconfirm?status="+textStatus+"&match_id="+match_id, true);
+    xmlhttp.send()
+}
+
+function MatchInvestWin(matchinfo_id){
+    xmlhttp.onreadystatechange = function(){
+        if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+            document.getElementById("investconfirmwin"+matchinfo_id).disabled = "disabled";
+            document.getElementById("investconfirmdefeat"+matchinfo_id).disabled = "disabled";
+        }
+    }
+    xmlhttp.open("POST", "/index.php/lol/match_confirm/matchinvestwin?matchinfo_id="+matchinfo_id, true);
+    xmlhttp.send()
+}
+
+function MatchInvestDefeat(matchinfo_id){
+    xmlhttp.onreadystatechange = function(){
+        if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+            document.getElementById("investconfirmwin"+matchinfo_id).disabled = "disabled";
+            document.getElementById("investconfirmdefeat"+matchinfo_id).disabled = "disabled";
+        }
+    }
+    xmlhttp.open("POST", "/index.php/lol/match_confirm/matchinvestdefeat?matchinfo_id="+matchinfo_id, true);
+    xmlhttp.send()
+}
+
+
+
+
 
 
 

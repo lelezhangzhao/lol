@@ -33,7 +33,7 @@ class Invest extends Controller
 
     public function MatchInfoInvest(Request $request)
     {
-        $matchinfoid = $request->param('id');
+        $matchinfoid = $request->param('matchinfo_id');
 
         $ydc = $request->param('ydc');
 

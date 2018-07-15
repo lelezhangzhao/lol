@@ -1,40 +1,4 @@
-<html>
-<head>
-    <title>LOL</title>
-    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js?version=1"></script>
-
-    <script type="text/javascript" src="__JS__/action.js?version=1"></script>
-    <link rel="stylesheet" href="__CSS__/style.css" type="text/css" />
-
-    <script>
-        function CashConfirm(type, cash_id, user_id, ydc) {
-
-            var xmlhttp;
-            if (window.XMLHttpRequest){
-                //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
-                xmlhttp=new XMLHttpRequest();
-            }
-            else
-            {
-                // IE6, IE5 浏览器执行代码
-                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-            }
-            xmlhttp.onreadystatechange = function(){
-                if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
-                    document.getElementById(cash_id+"ok").disabled = "disabled";
-                    document.getElementById(cash_id+"cancel").disabled = "disabled";
-                }
-
-            }
-            xmlhttp.open("GET", "/index.php/lol/charge_confirm/"+type+"?cash_id="+cash_id+"&user_id="+user_id+"&ydc="+ydc, true);
-            xmlhttp.send()
-
-
-//            xmlHttp.open("POST", "/index.php/lol/cashconfirm/confirmsuccess?cash_id=1&user_id=1&ydc=100", true);
-//            xmlHttp.open("POST", "/index.php/lol/cash_confirm/"+type+"?cash_id="+cash_id+"&user_id="+user_id+"&ydc="+ydc, true);
-        }
-    </script>
-</head>
+{include file="layout" /}
 <body >
 <div id="top">
 
@@ -77,4 +41,3 @@ $result = Db::view('user', 'id')
 </div>
 
 </body>
-</html>

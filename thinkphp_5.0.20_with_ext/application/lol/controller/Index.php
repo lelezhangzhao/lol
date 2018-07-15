@@ -33,7 +33,7 @@ class Index extends Controller
         foreach($matchs as $match){
             echo '比赛名称：'.$match['caption'].'<br/>';
             echo '比赛时间：'.$match['matchtime'].'<br/>';
-            echo '<input type="submit" value="下注" onClick="MatchInvest('.$match['id'].')" /><br/>';
+            echo '<input type="submit" value="下注" onclick="MatchInvest('.$match['id'].')" /><br/>';
 
         }
 
