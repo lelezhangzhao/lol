@@ -74,6 +74,9 @@ class ChargeConfirm extends Controller
             $cash->status = -1;
             $cash->update_time = date('Y-m-d H:i:s');
             $cash->allowField(true)->save();
+
+            $account = AccountModel::where('user_id', Session::get('id'))->find();
+            dump($account);
         }
 
     }

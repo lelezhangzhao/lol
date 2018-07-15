@@ -1,0 +1,16 @@
+{include file="layout" /}
+<body >
+
+<div id="content">
+    <form method="post" >
+        <h2>对冲</h2>
+        <div class="transfer">
+            对方账号：<input type="text" name="theotherusername" /><br/>
+            转账云豆：<input type="text" name="ydc" /><br/>
+            二级密码：<input type="text" name="secondpassword" /><br/>
+            <input type="submit" value="锁定" formaction="{:url('lol/transfer/lock')}" />
+        </div>
+    </form>
+</div>
+
+</body>

@@ -1,10 +1,10 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:95:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html";i:1531529552;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\layout.html";i:1531529567;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\header.html";i:1531528433;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\footer.html";i:1531528480;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:95:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html";i:1531626195;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\layout.html";i:1531529567;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\header.html";i:1531622665;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\footer.html";i:1531528480;}*/ ?>
 <html>
 <head>
     <title>LOL</title>
     <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js?version=1"></script>
 
-    <script type="text/javascript" src="/static/js/action.js?version=5"></script>
+    <script type="text/javascript" src="/static/js/action.js?version=6"></script>
 
     <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
 
@@ -29,7 +29,7 @@
             <ul>
                 <li id="charge"><a href="#">充值</a></li>
                 <li id="withdraw"><a href="#">提现</a></li>
-                <li id="zhuanzhang"><a href="#">转账</a></li>
+                <li id="transfer"><a href="#">转账</a></li>
                 <li id="zhuanzhangjilu"><a href="#">转账记录</a></li>
             </ul>
         </li>

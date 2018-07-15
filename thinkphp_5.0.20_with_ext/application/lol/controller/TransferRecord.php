@@ -1,7 +1,11 @@
 <?php
 namespace app\lol\controller;
 
-class TransferRecord
-{
+use think\Controller;
 
+
+class TransferRecord extends Controller{
+    public function Index(){
+        return $this->fetch();
+    }
 }

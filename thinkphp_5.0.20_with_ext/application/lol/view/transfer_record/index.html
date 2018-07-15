@@ -1,0 +1,22 @@
+{include file="layout" /}
+<body>
+<div id="top"></div>
+
+<div id="center_right"></div>
+
+<div id="bottom">
+    <form method="post" target="exec_target" >
+        <h2>转账记录</h2>
+        {volist name="matchconfirmlist" id="matchconfirm"}
+        <div>
+            比赛名称：{$matchconfirm.caption}<br/>
+            比赛时间：{$matchconfirm.matchtime}<br/>
+            比赛状态：<input type="text" id="status{$matchconfirm.matchid}" value="{$matchconfirm.status}" />
+            <input type="submit" value="确定" id="confirm{$matchconfirm.matchid}" onclick="MatchConfirm({$matchconfirm.matchid}, document.getElementById('status{$matchconfirm.matchid}').value)"/>
+        </div>
+        {/volist}
+    </form>
+    <iframe hidden id="exec_target" name="exec_target"/>
+</div>
+
+</body>

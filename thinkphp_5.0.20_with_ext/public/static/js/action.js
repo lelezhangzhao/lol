@@ -32,8 +32,8 @@ $(function(){
     $("li#withdraw").click(function(){
         OpenNewUrl("/index.php/lol/withdraw/index");
     });
-    $("li#zhuanzhang").click(function(){
-        alert("zhuanzhang");
+    $("li#transfer").click(function(){
+        OpenNewUrl("/index.php/lol/transfer/index");
     });
     $("li#zhuanzhangjilu").click(function(){
         alert("zhuanzhangjilu");
@@ -90,7 +90,7 @@ function GetInvestRecord(){
 }
 
 //charge_confirm
-function CashConfirm(type, cash_id, user_id, ydc) {
+function ChargeConfirm(type, cash_id, user_id, ydc) {
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             document.getElementById(cash_id + "ok").disabled = "disabled";
@@ -108,7 +108,7 @@ function MatchInfoInvest(matchinfo_id, ydc){
 }
 
 //withdraw_confirm
-function CashConfirm(confirmtype, cash_id, user_id, ydc) {
+function WithdrawConfirm(confirmtype, cash_id, user_id, ydc) {
 
     xmlhttp.onreadystatechange = function(){
         if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
@@ -123,16 +123,16 @@ function CashConfirm(confirmtype, cash_id, user_id, ydc) {
 
 //match_confirm
 
-function MatchConfirm(match_id){
-    var textStatusId = "status" + match_id;
-    var textStatus = document.getElementById(textStatusId).value;
+function MatchConfirm(match_id, match_status){
+    // var textStatusId = "status" + match_id;
+    // var textStatus = document.getElementById(textStatusId).value;
     xmlhttp.onreadystatechange = function(){
         if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
             document.getElementById("status"+match_id).disabled = "disabled";
             document.getElementById("confirm"+match_id).disabled = "disabled";
         }
     }
-    xmlhttp.open("POST", "/index.php/lol/match_confirm/matchconfirm?status="+textStatus+"&match_id="+match_id, true);
+    xmlhttp.open("POST", "/index.php/lol/match_confirm/matchconfirm?status="+match_status+"&match_id="+match_id, true);
     xmlhttp.send()
 }
 

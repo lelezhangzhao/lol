@@ -11,15 +11,7 @@
 
 
 </div>
-<!--
-$result = Db::view('user', 'id')
-->view('account_info', 'name, banknum, alipaynum', 'account_info.user_id = user.id')
-->view('cash', ['id' => 'cash_id', 'ydc', 'create_time'], 'cash.user_id = user.id')
-->where(['cash.type' => 0, 'cash.status' => 0])
-->select();
 
-
--->
 
 <div id="bottom">
     <form method="post" action="" target="exec_target">
@@ -32,8 +24,8 @@ $result = Db::view('user', 'id')
             支付宝账号：{$cash.alipaynum}<br/>
             提现额度：{$cash.ydc}<br/>
             提现时间：{$cash.create_time}<br/>
-            <input type="submit" value="确定" id="{$cash.cash_id}ok" onclick=CashConfirm("confirmsuccess",{$cash.cash_id},{$cash.user_id},{$cash.ydc})  />
-            <input type="submit" value="取消" id="{$cash.cash_id}cancel" onclick=CashConfirm("confirmfailed",{$cash.cash_id},{$cash.user_id},{$cash.ydc}) />
+            <input type="submit" value="确定" id="{$cash.cash_id}ok" onclick="WithdrawConfirm('confirmsuccess',{$cash.cash_id},{$cash.user_id},{$cash.ydc})"  />
+            <input type="submit" value="取消" id="{$cash.cash_id}cancel" onclick="WithdrawConfirm('confirmfailed',{$cash.cash_id},{$cash.user_id},{$cash.ydc})" />
         </div>
         {/volist}
     </form>

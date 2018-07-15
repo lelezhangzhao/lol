@@ -1,10 +1,10 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:103:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\invest_record\index.html";i:1531530293;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\layout.html";i:1531529567;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\header.html";i:1531622665;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\footer.html";i:1531528480;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:98:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\withdraw\index.html";i:1531530325;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\layout.html";i:1531529567;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\header.html";i:1531528433;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\footer.html";i:1531528480;}*/ ?>
 <html>
 <head>
     <title>LOL</title>
     <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js?version=1"></script>
 
-    <script type="text/javascript" src="/static/js/action.js?version=6"></script>
+    <script type="text/javascript" src="/static/js/action.js?version=5"></script>
 
     <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
 
@@ -16,7 +16,7 @@
 
 
 </html>
-<body onload="GetInvestRecord()">
+<body >
 <div id="top">
 
 </div>
@@ -31,12 +31,14 @@
 
 
 <div id="bottom">
-    <form method="post" target="exec_target">
-        <h2>下注记录</h2>
-        <div id="investrecord">
+    <form method="post" >
+        <h2>提现</h2>
+        <div>
+            提现金额：<input type="text" name="ydc"/>ydc<br/>
+            二级密码：<input type="text" name="secondpassword"/><br/>
+            <input type="submit" value="提现到支付宝" formaction=<?php echo url('lol/withdraw/withdraw'); ?> />
         </div>
     </form>
-    <iframe hidden id="exec_target" name="exec_target"/>
 </div>
 
 </body>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:98:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\login_in\index.html";i:1531530304;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\layout.html";i:1531529567;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\header.html";i:1531622665;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\footer.html";i:1531528480;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:98:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\transfer\index.html";i:1531625811;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\layout.html";i:1531529567;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\header.html";i:1531622665;s:80:"H:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\footer.html";i:1531528480;}*/ ?>
 <html>
 <head>
     <title>LOL</title>
@@ -16,18 +16,18 @@
 
 
 </html>
+<body >
 
-<body>
-<form method="post" action="<?php echo url('lol/login_in/loginin'); ?>">
-    用户名 <input type="text" name="username" />*<br />
-    密码 <input type="text" name="password" />*<br />
-    手机号 <input type="text" name="tel" />*<br />
-    验证码 <input type="text" name="identify" />*
-    <img src="<?php echo captcha_src(); ?>" onclick="this.src='/index.php/captcha?id='+Math.random()" style="cursor: pointer" /><br />
-    推荐人 <input type="text" name="rank_pre" /><br />
-    <input type="submit" value="注册" name="loginin" />
-
-</form>
+<div id="content">
+    <form method="post" >
+        <h2>对冲</h2>
+        <div class="transfer">
+            对方账号：<input type="text" name="theotherusername" /><br/>
+            转账云豆：<input type="text" name="ydc" /><br/>
+            二级密码：<input type="text" name="secondpassword" /><br/>
+            <input type="submit" value="锁定" formaction="<?php echo url('lol/transfer/lock'); ?>" />
+        </div>
+    </form>
+</div>
 
 </body>
-

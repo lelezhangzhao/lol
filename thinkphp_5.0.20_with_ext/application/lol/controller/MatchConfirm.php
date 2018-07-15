@@ -11,11 +11,11 @@ use app\lol\model\Account as AccountModel;
 use app\lol\model\Match as MatchModel;
 use app\lol\model\MatchInfo as MatchInfoModel;
 use app\lol\model\Invest as InvestModel;
-use app\lol\api\User as UserApi;
+use app\lol\api\Helper as HelperApi;
 
 class MatchConfirm extends Controller{
     public function Index(){
-        if(!UserApi::IsCurAdmin()){
+        if(!HelperApi::IsCurAdmin()){
             return '用户没有权限';
         }
 
@@ -37,7 +37,7 @@ class MatchConfirm extends Controller{
     }
 
     public function MatchConfirm(Request $request){
-        if(!UserApi::IsCurAdmin()){
+        if(!HelperApi::IsCurAdmin()){
             return '用户没有权限';
         }
 
@@ -52,7 +52,7 @@ class MatchConfirm extends Controller{
     }
 
     public function MatchInvestWin(Request $request){
-        if(!UserApi::IsCurAdmin()){
+        if(!HelperApi::IsCurAdmin()){
             return '用户没有权限';
         }
 
@@ -87,7 +87,7 @@ class MatchConfirm extends Controller{
     }
 
     public function MatchInvestDefeat(Request $request){
-        if(!UserApi::IsCurAdmin()){
+        if(!HelperApi::IsCurAdmin()){
             return '用户没有权限';
         }
 
