@@ -1,10 +1,10 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html";i:1531469777;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:95:"E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html";i:1531727828;s:80:"E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\layout.html";i:1531702546;s:80:"E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\header.html";i:1531728021;s:80:"E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\view\footer.html";i:1531702546;}*/ ?>
 <html>
 <head>
     <title>LOL</title>
     <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js?version=1"></script>
 
-    <script type="text/javascript" src="/static/js/action.js?version=5"></script>
+    <script type="text/javascript" src="/static/js/action.js?version=8"></script>
 
     <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
 
@@ -13,6 +13,9 @@
     </script>
     <code class="hljs xml"><span class="hljs-tag"><span class="hljs-tag"><</span><span class="hljs-name"><span class="hljs-tag"><span class="hljs-name">script</span></span></span><span class="hljs-tag"> </span><span class="hljs-attr"><span class="hljs-tag"><span class="hljs-attr">src</span></span></span><span class="hljs-tag">=</span><span class="hljs-string"><span class="hljs-tag"><span class="hljs-string">"1.js?ver=1"</span></span></span><span class="hljs-tag">></span></span><span class="undefined"></span><span class="hljs-tag"><span class="undefined"></span><span class="hljs-tag"></</span><span class="hljs-name"><span class="hljs-tag"><span class="hljs-name">script</span></span></span><span class="hljs-tag">></span></span></code>
 </head>
+
+
+</html>
 <body onload="GetMatch()">
 <div id="top">
 
@@ -26,8 +29,8 @@
             <ul>
                 <li id="charge"><a href="#">充值</a></li>
                 <li id="withdraw"><a href="#">提现</a></li>
-                <li id="zhuanzhang"><a href="#">转账</a></li>
-                <li id="zhuanzhangjilu"><a href="#">转账记录</a></li>
+                <li id="transfer"><a href="#">转账</a></li>
+                <li id="transferrecord"><a href="#">转账记录</a></li>
             </ul>
         </li>
         <li id="personinfo"><a href="#">个人信息</a>
@@ -61,4 +64,3 @@
 </div>
 
 </body>
-</html>

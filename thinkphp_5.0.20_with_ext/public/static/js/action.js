@@ -35,8 +35,8 @@ $(function(){
     $("li#transfer").click(function(){
         OpenNewUrl("/index.php/lol/transfer/index");
     });
-    $("li#zhuanzhangjilu").click(function(){
-        alert("zhuanzhangjilu");
+    $("li#transferrecord").click(function(){
+        OpenNewUrl("/index.php/lol/transfer_record/index");
     });
     $("li#displaypersoninfo").click(function(){
         OpenNewUrl("/index.php/lol/account_info/index");
@@ -156,6 +156,21 @@ function MatchInvestDefeat(matchinfo_id){
     }
     xmlhttp.open("POST", "/index.php/lol/match_confirm/matchinvestdefeat?matchinfo_id="+matchinfo_id, true);
     xmlhttp.send()
+}
+
+//transfer_record
+function GetTransferRecord(){
+    xmlhttp.onreadystatechange = function(){
+        if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+            document.getElementById("transferrecord").innerHTML = xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open("POST", "/index.php/lol/transfer_record/gettransferrecord", true);
+    xmlhttp.send()
+}
+
+function TransferConfirm(btnid){
+    document.getElementById("transferconfirm"+btnid).disabled = "disabled";
 }
 
 

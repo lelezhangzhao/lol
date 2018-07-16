@@ -88,15 +88,23 @@ class Transfer extends Controller{
         $score->allowField(true)->save();
 
         //theotheruser保存到score
-        $score = new ScoreModel();
-        $score->type = 0;
-        $score->ydc = $ydc;
-        $score->theotherusername = $user->username;
-        $score->create_time = $date;
-        $score->update_time = $date;
-        $score->status = 0;
-        $score->user_id = $theotheruser->id;
-        $score->allowField(true)->save();
+        $theotherscore = new ScoreModel();
+        $theotherscore->type = 0;
+        $theotherscore->ydc = $ydc;
+        $theotherscore->theotherusername = $user->username;
+        $theotherscore->create_time = $date;
+        $theotherscore->update_time = $date;
+        $theotherscore->status = 0;
+        $theotherscore->user_id = $theotheruser->id;
+        $theotherscore->allowField(true)->save();
+
+        $score->anotherid = $theotherscore->id;
+        $theotherscore->anotherid = $score->id;
+
+        $score->save();
+        $theotherscore->save();
+
+
 
         $this->success('锁定成功，等待对方转账');
     }
