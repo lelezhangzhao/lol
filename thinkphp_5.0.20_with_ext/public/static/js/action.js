@@ -41,11 +41,11 @@ $(function(){
     $("li#displaypersoninfo").click(function(){
         OpenNewUrl("/index.php/lol/account_info/index");
     });
-    $("li#xiugaimima").click(function(){
-        alert("xiugaimima");
+    $("li#fixpassword").click(function(){
+        OpenNewUrl("/index.php/lol/fix_password/index");
     });
-    $("li#xiugaierjimima").click(function(){
-        alert("xiugaierjimima");
+    $("li#fixsecondpassword").click(function(){
+        OpenNewUrl("/index.php/lol/fix_second_password/index");
     });
 
     $("li#xitonggonggao").click(function(){

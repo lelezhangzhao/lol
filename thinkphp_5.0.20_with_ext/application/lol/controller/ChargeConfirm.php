@@ -76,7 +76,6 @@ class ChargeConfirm extends Controller
             $cash->allowField(true)->save();
 
             $account = AccountModel::where('user_id', Session::get('id'))->find();
-            dump($account);
         }
 
     }

@@ -1,0 +1,27 @@
+{include file="layout" /}
+<body >
+<div id="top">
+
+</div>
+
+
+
+<div id="center_right">
+
+
+
+</div>
+
+
+<div id="bottom">
+    <form method="post" >
+        <h2>修改密码</h2>
+        <div>
+            原密码：<input type="text" name="oldpassword"/><br/>
+            新密码：<input type="text" name="newpassword" />
+            <input type="submit" value="确认修改" formaction="{:url('lol/fix_password/fixpassword')}" />
+        </div>
+    </form>
+</div>
+
+</body>

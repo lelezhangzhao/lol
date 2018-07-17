@@ -1,0 +1,2249 @@
+---------------------------------------------------------------
+[ 2018-07-17T09:45:11+08:00 ] 127.0.0.1 GET /index.php
+[ info ] tp5.com/index.php [运行时间：0.061004s][吞吐率：16.39req/s] [内存消耗：2,667.12kb] [文件加载：48]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\Index->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:45:12+08:00 ] 127.0.0.1 GET /index.php/lol/login_up/index
+[ info ] tp5.com/index.php/lol/login_up/index [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：2,974.52kb] [文件加载：50]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'login_up',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\LoginUp->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\LoginUp.php ]
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\login_up\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:45:12+08:00 ] 127.0.0.1 GET /index.php/captcha.html
+[ info ] tp5.com/index.php/captcha.html [运行时间：0.066003s][吞吐率：15.15req/s] [内存消耗：2,217.72kb] [文件加载：36]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/login_up/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:45:21+08:00 ] 127.0.0.1 GET /index.php/captcha?id=0.7406892289891354
+[ info ] tp5.com/index.php/captcha?id=0.7406892289891354 [运行时间：0.055004s][吞吐率：18.18req/s] [内存消耗：2,217.88kb] [文件加载：36]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/login_up/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:45:27+08:00 ] 127.0.0.1 POST /index.php/lol/login_up/loginup.html
+[ info ] tp5.com/index.php/lol/login_up/loginup.html [运行时间：1.096062s][吞吐率：0.91req/s] [内存消耗：4,424.66kb] [文件加载：56]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'login_up',
+    2 => 'loginup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '82',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/login_up/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'lelezhangzhao',
+  'password' => 'zhangzhao',
+  'identify' => 'AMRI',
+  'loginup' => '登录',
+)
+[ info ] [ RUN ] app\lol\controller\LoginUp->LoginUp[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\LoginUp.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+[E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2018-07-17T09:46:31+08:00 ] 127.0.0.1 POST /index.php/lol/login_up/loginup.html
+[ info ] tp5.com/index.php/lol/login_up/loginup.html [运行时间：0.048002s][吞吐率：20.83req/s] [内存消耗：2,759.25kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'login_up',
+    2 => 'loginup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '82',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'origin' => 'http://tp5.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/login_up/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'lelezhangzhao',
+  'password' => 'zhangzhao',
+  'identify' => 'AMRI',
+  'loginup' => '登录',
+)
+[ info ] [ RUN ] app\lol\controller\LoginUp->LoginUp[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\LoginUp.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:46:33+08:00 ] 127.0.0.1 GET /index.php/captcha.html
+[ info ] tp5.com/index.php/captcha.html [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：2,217.74kb] [文件加载：36]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/login_up/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:46:35+08:00 ] 127.0.0.1 GET /index.php/captcha?id=0.7818851954979285
+[ info ] tp5.com/index.php/captcha?id=0.7818851954979285 [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：2,217.75kb] [文件加载：36]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/login_up/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:46:39+08:00 ] 127.0.0.1 POST /index.php/lol/login_up/loginup.html
+[ info ] tp5.com/index.php/lol/login_up/loginup.html [运行时间：0.029001s][吞吐率：34.48req/s] [内存消耗：2,759.95kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'login_up',
+    2 => 'loginup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '82',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/login_up/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'lelezhangzhao',
+  'password' => 'zhangzhao',
+  'identify' => 'PXKE',
+  'loginup' => '登录',
+)
+[ info ] [ RUN ] app\lol\controller\LoginUp->LoginUp[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\LoginUp.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:46:41+08:00 ] 127.0.0.1 GET /index.php/captcha.html
+[ info ] tp5.com/index.php/captcha.html [运行时间：0.023001s][吞吐率：43.48req/s] [内存消耗：2,217.73kb] [文件加载：36]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/login_up/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:46:42+08:00 ] 127.0.0.1 GET /index.php/captcha?id=0.0595663681550298
+[ info ] tp5.com/index.php/captcha?id=0.0595663681550298 [运行时间：0.044003s][吞吐率：22.73req/s] [内存消耗：2,217.85kb] [文件加载：36]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/login_up/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:46:43+08:00 ] 127.0.0.1 GET /index.php/captcha?id=0.015290669589162142
+[ info ] tp5.com/index.php/captcha?id=0.015290669589162142 [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：2,217.84kb] [文件加载：36]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/login_up/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:46:48+08:00 ] 127.0.0.1 POST /index.php/lol/login_up/loginup.html
+[ info ] tp5.com/index.php/lol/login_up/loginup.html [运行时间：0.104006s][吞吐率：9.61req/s] [内存消耗：4,521.19kb] [文件加载：57]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'login_up',
+    2 => 'loginup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '82',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/login_up/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'lelezhangzhao',
+  'password' => 'zhangzhao',
+  'identify' => 'NCP2',
+  'loginup' => '登录',
+)
+[ info ] [ RUN ] app\lol\controller\LoginUp->LoginUp[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\LoginUp.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_user` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_user` WHERE  `username` = 'lelezhangzhao'  AND `password` = 'zhangzhao' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-17T09:46:49+08:00 ] 127.0.0.1 GET /index.php/lol/index/index.html
+[ info ] tp5.com/index.php/lol/index/index.html [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：2,875.63kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/login_up/loginup.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\Index->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:46:50+08:00 ] 127.0.0.1 POST /index.php/lol/index/getmatch
+[ info ] tp5.com/index.php/lol/index/getmatch [运行时间：0.084004s][吞吐率：11.90req/s] [内存消耗：4,308.61kb] [文件加载：53]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'index',
+    2 => 'getmatch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'origin' => 'http://tp5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://tp5.com/index.php/lol/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\Index->GetMatch[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_match` [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_match` WHERE  `matchtime` > '2018-07-17 09:46:50'  AND `status` = 0 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-17T09:48:12+08:00 ] 127.0.0.1 GET /index.php/lol/index/index.html
+[ info ] tp5.com/index.php/lol/index/index.html [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：2,876.09kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/login_up/loginup.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\Index->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:48:13+08:00 ] 127.0.0.1 POST /index.php/lol/index/getmatch
+[ info ] tp5.com/index.php/lol/index/getmatch [运行时间：0.059004s][吞吐率：16.95req/s] [内存消耗：4,308.61kb] [文件加载：53]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'index',
+    2 => 'getmatch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'origin' => 'http://tp5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://tp5.com/index.php/lol/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\Index->GetMatch[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_match` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_match` WHERE  `matchtime` > '2018-07-17 09:48:12'  AND `status` = 0 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-17T09:48:14+08:00 ] 127.0.0.1 GET /index.php/lol/fix_password/index
+[ info ] tp5.com/index.php/lol/fix_password/index [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：2,971.55kb] [文件加载：50]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\fix_password\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:48:19+08:00 ] 127.0.0.1 POST /index.php/lol/fix_password/fixpassword.html
+[ info ] tp5.com/index.php/lol/fix_password/fixpassword.html [运行时间：0.125007s][吞吐率：8.00req/s] [内存消耗：2,733.08kb] [文件加载：50]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'fixpassword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '35',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => 'zhangzhao',
+  'newpassword' => 'z',
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->FixPassword[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'app\lol\api\helper' not found[E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php:20]
+---------------------------------------------------------------
+[ 2018-07-17T09:52:37+08:00 ] 127.0.0.1 POST /index.php/lol/fix_password/fixpassword.html
+[ info ] tp5.com/index.php/lol/fix_password/fixpassword.html [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：2,744.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'fixpassword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '35',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'origin' => 'http://tp5.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => 'zhangzhao',
+  'newpassword' => 'z',
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->FixPassword[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'app\lol\controller\Session' not found[E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php:27]
+---------------------------------------------------------------
+[ 2018-07-17T09:52:50+08:00 ] 127.0.0.1 POST /index.php/lol/fix_password/fixpassword.html
+[ info ] tp5.com/index.php/lol/fix_password/fixpassword.html [运行时间：0.151009s][吞吐率：6.62req/s] [内存消耗：4,440.20kb] [文件加载：58]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'fixpassword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '35',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'origin' => 'http://tp5.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => 'zhangzhao',
+  'newpassword' => 'z',
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->FixPassword[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `lol_user`  SET `password`='z'  WHERE  `id` = 1 [ RunTime:0.031001s ]
+---------------------------------------------------------------
+[ 2018-07-17T09:52:52+08:00 ] 127.0.0.1 GET /index.php/lol/fix_password/index
+[ info ] tp5.com/index.php/lol/fix_password/index [运行时间：0.049002s][吞吐率：20.41req/s] [内存消耗：2,767.48kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/fixpassword.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\fix_password\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T09:53:51+08:00 ] 127.0.0.1 POST /index.php/lol/fix_password/fixpassword.html
+[ info ] tp5.com/index.php/lol/fix_password/fixpassword.html [运行时间：0.134008s][吞吐率：7.46req/s] [内存消耗：4,439.77kb] [文件加载：58]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'fixpassword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => 'z',
+  'newpassword' => 'zz',
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->FixPassword[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `lol_user`  SET `password`='zz'  WHERE  `id` = 1 [ RunTime:0.039002s ]
+---------------------------------------------------------------
+[ 2018-07-17T09:53:52+08:00 ] 127.0.0.1 GET /index.php/lol/fix_password/index
+[ info ] tp5.com/index.php/lol/fix_password/index [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：2,767.18kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/fixpassword.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\fix_password\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T10:02:45+08:00 ] 127.0.0.1 POST /index.php/lol/fix_password/fixpassword.html
+[ info ] tp5.com/index.php/lol/fix_password/fixpassword.html [运行时间：0.101006s][吞吐率：9.90req/s] [内存消耗：4,459.02kb] [文件加载：58]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'fixpassword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => 'zz',
+  'newpassword' => 'z',
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->FixPassword[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [1]Method app\lol\model\User::__toString() must not throw an exception[E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\library\think\Controller.php:0]
+---------------------------------------------------------------
+[ 2018-07-17T10:04:34+08:00 ] 127.0.0.1 POST /index.php/lol/fix_password/fixpassword.html
+[ info ] tp5.com/index.php/lol/fix_password/fixpassword.html [运行时间：0.119007s][吞吐率：8.40req/s] [内存消耗：4,469.47kb] [文件加载：59]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'fixpassword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'origin' => 'http://tp5.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => 'zz',
+  'newpassword' => 'z',
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->FixPassword[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `lol_user`  SET `password`='z'  WHERE  `id` = 1 [ RunTime:0.035002s ]
+---------------------------------------------------------------
+[ 2018-07-17T10:04:36+08:00 ] 127.0.0.1 GET /index.php/lol/fix_password/index
+[ info ] tp5.com/index.php/lol/fix_password/index [运行时间：0.031001s][吞吐率：32.26req/s] [内存消耗：2,767.14kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/fixpassword.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\fix_password\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T10:04:44+08:00 ] 127.0.0.1 POST /index.php/lol/fix_password/fixpassword.html
+[ info ] tp5.com/index.php/lol/fix_password/fixpassword.html [运行时间：0.156008s][吞吐率：6.41req/s] [内存消耗：4,469.54kb] [文件加载：59]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'fixpassword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => 'z',
+  'newpassword' => 'zz',
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->FixPassword[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_user` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `lol_user`  SET `password`='zz'  WHERE  `id` = 1 [ RunTime:0.050003s ]
+---------------------------------------------------------------
+[ 2018-07-17T10:04:46+08:00 ] 127.0.0.1 GET /index.php/lol/fix_password/index
+[ info ] tp5.com/index.php/lol/fix_password/index [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：2,767.14kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/fixpassword.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\fix_password\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T10:05:38+08:00 ] 127.0.0.1 POST /index.php/lol/fix_password/fixpassword.html
+[ info ] tp5.com/index.php/lol/fix_password/fixpassword.html [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：4,344.52kb] [文件加载：56]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'fixpassword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => 'z',
+  'newpassword' => 'zz',
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->FixPassword[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-17T10:05:39+08:00 ] 127.0.0.1 GET /index.php/lol/fix_password/index
+[ info ] tp5.com/index.php/lol/fix_password/index [运行时间：0.061003s][吞吐率：16.39req/s] [内存消耗：2,768.02kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/fixpassword.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\fix_password\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T10:05:42+08:00 ] 127.0.0.1 POST /index.php/lol/fix_password/fixpassword.html
+[ info ] tp5.com/index.php/lol/fix_password/fixpassword.html [运行时间：0.108007s][吞吐率：9.26req/s] [内存消耗：4,470.53kb] [文件加载：59]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'fixpassword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => 'zz',
+  'newpassword' => 'z',
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->FixPassword[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_user` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `lol_user`  SET `password`='z'  WHERE  `id` = 1 [ RunTime:0.043002s ]
+---------------------------------------------------------------
+[ 2018-07-17T10:05:43+08:00 ] 127.0.0.1 GET /index.php/lol/fix_password/index
+[ info ] tp5.com/index.php/lol/fix_password/index [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：2,768.02kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/fixpassword.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\fix_password\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T10:05:47+08:00 ] 127.0.0.1 POST /index.php/lol/fix_password/fixpassword.html
+[ info ] tp5.com/index.php/lol/fix_password/fixpassword.html [运行时间：0.081004s][吞吐率：12.35req/s] [内存消耗：4,344.54kb] [文件加载：56]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'fixpassword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '27',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => 'z',
+  'newpassword' => 'z',
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->FixPassword[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-17T10:05:48+08:00 ] 127.0.0.1 GET /index.php/lol/fix_password/index
+[ info ] tp5.com/index.php/lol/fix_password/index [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：2,768.02kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/fixpassword.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\fix_password\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T10:06:19+08:00 ] 127.0.0.1 POST /index.php/lol/fix_password/fixpassword.html
+[ info ] tp5.com/index.php/lol/fix_password/fixpassword.html [运行时间：0.058004s][吞吐率：17.24req/s] [内存消耗：4,360.66kb] [文件加载：55]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'fixpassword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => 'z',
+  'newpassword' => 'zz',
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->FixPassword[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_user` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-17T10:06:21+08:00 ] 127.0.0.1 GET /index.php/lol/fix_password/index
+[ info ] tp5.com/index.php/lol/fix_password/index [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：2,768.02kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/fixpassword.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\fix_password\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T10:07:39+08:00 ] 127.0.0.1 POST /index.php/lol/fix_password/fixpassword.html
+[ info ] tp5.com/index.php/lol/fix_password/fixpassword.html [运行时间：0.121007s][吞吐率：8.26req/s] [内存消耗：4,470.84kb] [文件加载：59]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'fixpassword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '35',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => 'z',
+  'newpassword' => 'zhangzhao',
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->FixPassword[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_user` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `lol_user`  SET `password`='zhangzhao'  WHERE  `id` = 1 [ RunTime:0.038003s ]
+---------------------------------------------------------------
+[ 2018-07-17T10:07:40+08:00 ] 127.0.0.1 GET /index.php/lol/fix_password/index
+[ info ] tp5.com/index.php/lol/fix_password/index [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：2,768.02kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_password',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_password/fixpassword.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\FixPassword->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\fix_password\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T10:12:48+08:00 ] 127.0.0.1 GET /index.php/lol/index/index.html
+[ info ] tp5.com/index.php/lol/index/index.html [运行时间：0.064003s][吞吐率：15.62req/s] [内存消耗：2,876.10kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/login_up/loginup.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\Index->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T10:12:48+08:00 ] 127.0.0.1 POST /index.php/lol/index/getmatch
+[ info ] tp5.com/index.php/lol/index/getmatch [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：4,308.61kb] [文件加载：53]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'index',
+    2 => 'getmatch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'origin' => 'http://tp5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://tp5.com/index.php/lol/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\Index->GetMatch[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_match` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_match` WHERE  `matchtime` > '2018-07-17 10:12:48'  AND `status` = 0 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-17T10:12:49+08:00 ] 127.0.0.1 GET /index.php/lol/fix_second_password/index
+[ info ] tp5.com/index.php/lol/fix_second_password/index [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：2,982.57kb] [文件加载：51]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_second_password',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\FixSecondPassword->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixSecondPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\fix_second_password\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T10:12:54+08:00 ] 127.0.0.1 POST /index.php/lol/fix_second_password/fixsecondpassword.html
+[ info ] tp5.com/index.php/lol/fix_second_password/fixsecondpassword.html [运行时间：0.105006s][吞吐率：9.52req/s] [内存消耗：4,390.19kb] [文件加载：59]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_second_password',
+    2 => 'fixsecondpassword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '47',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_second_password/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldsecondpassword' => 'zhangzhao',
+  'newsecondpassword' => 'z',
+)
+[ info ] [ RUN ] app\lol\controller\FixSecondPassword->FixSecondPassword[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixSecondPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_user` [ RunTime:0.014001s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'[E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-07-17T10:13:50+08:00 ] 127.0.0.1 POST /index.php/lol/fix_second_password/fixsecondpassword.html
+[ info ] tp5.com/index.php/lol/fix_second_password/fixsecondpassword.html [运行时间：0.154008s][吞吐率：6.49req/s] [内存消耗：4,439.41kb] [文件加载：58]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_second_password',
+    2 => 'fixsecondpassword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '47',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'origin' => 'http://tp5.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_second_password/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldsecondpassword' => 'zhangzhao',
+  'newsecondpassword' => 'z',
+)
+[ info ] [ RUN ] app\lol\controller\FixSecondPassword->FixSecondPassword[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixSecondPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_account_info` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_account_info` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `lol_account_info`  SET `secondpassword`='z'  WHERE  `id` = 1 [ RunTime:0.042002s ]
+---------------------------------------------------------------
+[ 2018-07-17T10:13:52+08:00 ] 127.0.0.1 GET /index.php/lol/fix_second_password/index
+[ info ] tp5.com/index.php/lol/fix_second_password/index [运行时间：0.046002s][吞吐率：21.74req/s] [内存消耗：2,767.02kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'fix_second_password',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php/lol/fix_second_password/fixsecondpassword.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\FixSecondPassword->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\FixSecondPassword.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\fix_second_password\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T12:46:23+08:00 ] 127.0.0.1 GET /index.php
+[ info ] tp5.com/index.php [运行时间：0.038003s][吞吐率：26.31req/s] [内存消耗：2,657.92kb] [文件加载：47]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\Index->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T12:46:35+08:00 ] 127.0.0.1 GET /index.php/lol/invest_record/index
+[ info ] tp5.com/index.php/lol/invest_record/index [运行时间：0.216013s][吞吐率：4.63req/s] [内存消耗：4,081.72kb] [文件加载：54]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'invest_record',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\InvestRecord->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\InvestRecord.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\invest_record\index.html [ array (
+  0 => 'investlist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_invest` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT `invest`.`id`,`invest`.`ydc`,`invest`.`create_time` AS `invest_create_time`,`invest`.`status`,`invest`.`result`,`invest`.`bill`,`match_info`.`caption`,`match_info`.`rate`,`match`.`matchtime` FROM `lol_invest` `invest` INNER JOIN `lol_match_info` `match_info` ON `invest`.`matchinfo_id`=`match_info`.`id` INNER JOIN `lol_match` `match` ON `match_info`.`match_id`=`match`.`id` WHERE  `invest`.`user_id` = 1 ORDER BY `invest`.`create_time` DESC [ RunTime:0.054003s ]
+---------------------------------------------------------------
+[ 2018-07-17T12:46:36+08:00 ] 127.0.0.1 POST /index.php/lol/invest_record/getinvestrecord
+[ info ] tp5.com/index.php/lol/invest_record/getinvestrecord [运行时间：0.076005s][吞吐率：13.16req/s] [内存消耗：3,841.96kb] [文件加载：51]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'invest_record',
+    2 => 'getinvestrecord',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'origin' => 'http://tp5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://tp5.com/index.php/lol/invest_record/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\InvestRecord->GetInvestRecord[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\InvestRecord.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_invest` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `invest`.`id`,`invest`.`ydc`,`invest`.`create_time` AS `invest_create_time`,`invest`.`status`,`invest`.`result`,`invest`.`bill`,`match_info`.`caption`,`match_info`.`rate`,`match`.`matchtime` FROM `lol_invest` `invest` INNER JOIN `lol_match_info` `match_info` ON `invest`.`matchinfo_id`=`match_info`.`id` INNER JOIN `lol_match` `match` ON `match_info`.`match_id`=`match`.`id` WHERE  `invest`.`user_id` = 1 ORDER BY `invest`.`create_time` DESC [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-17T12:47:10+08:00 ] 127.0.0.1 GET /index.php
+[ info ] tp5.com/index.php [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：2,875.29kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\Index->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T12:47:11+08:00 ] 127.0.0.1 POST /index.php/lol/index/getmatch
+[ info ] tp5.com/index.php/lol/index/getmatch [运行时间：0.060004s][吞吐率：16.67req/s] [内存消耗：4,307.80kb] [文件加载：53]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'index',
+    2 => 'getmatch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'origin' => 'http://tp5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://tp5.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\Index->GetMatch[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_match` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_match` WHERE  `matchtime` > '2018-07-17 12:47:10'  AND `status` = 0 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-17T12:49:55+08:00 ] 127.0.0.1 GET /index.php
+[ info ] tp5.com/index.php [运行时间：0.066004s][吞吐率：15.15req/s] [内存消耗：2,876.11kb] [文件加载：49]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\Index->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T12:49:56+08:00 ] 127.0.0.1 POST /index.php/lol/index/getmatch
+[ info ] tp5.com/index.php/lol/index/getmatch [运行时间：0.058004s][吞吐率：17.24req/s] [内存消耗：4,308.66kb] [文件加载：53]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'index',
+    2 => 'getmatch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'origin' => 'http://tp5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://tp5.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\Index->GetMatch[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_match` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_match` WHERE  `matchtime` > '2018-07-17 12:49:56'  AND `status` = 0 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-17T14:26:22+08:00 ] 127.0.0.1 GET /index.php
+[ info ] tp5.com/index.php [运行时间：0.043003s][吞吐率：23.25req/s] [内存消耗：2,658.63kb] [文件加载：47]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\Index->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-17T14:26:22+08:00 ] 127.0.0.1 POST /index.php/lol/index/getmatch
+[ info ] tp5.com/index.php/lol/index/getmatch [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：4,308.41kb] [文件加载：53]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'index',
+    2 => 'getmatch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'origin' => 'http://tp5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://tp5.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\Index->GetMatch[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_match` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_match` WHERE  `matchtime` > '2018-07-17 14:26:22'  AND `status` = 0 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-17T14:26:30+08:00 ] 127.0.0.1 GET /index.php/lol/charge_confirm/index
+[ info ] tp5.com/index.php/lol/charge_confirm/index [运行时间：0.136008s][吞吐率：7.35req/s] [内存消耗：4,565.21kb] [文件加载：56]
+[ info ] [ LANG ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lol',
+    1 => 'charge_confirm',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=pgc8gnhapmb4093vb96vv9km66; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\lol\controller\ChargeConfirm->Index[ E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\application\lol\controller\ChargeConfirm.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\share\lol.git\trunk\thinkphp_5.0.20_with_ext\public/../application/lol\view\charge_confirm\index.html [ array (
+  0 => 'cashlist',
+  1 => 'cashlistcount',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=lol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lol_user` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `lol_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `user`.`id` AS `user_id`,`account_info`.`name`,account_info. banknum,account_info. alipaynum,`cash`.`id` AS `cash_id`,`cash`.`ydc`,`cash`.`create_time` FROM `lol_user` `user` INNER JOIN `lol_account_info` `account_info` ON `account_info`.`user_id`=`user`.`id` INNER JOIN `lol_cash` `cash` ON `cash`.`user_id`=`user`.`id` WHERE  `cash`.`type` = 0  AND `cash`.`status` = 0 [ RunTime:0.024001s ]
